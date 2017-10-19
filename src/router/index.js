@@ -4,10 +4,11 @@ import Router from 'vue-router';
 Vue.use(Router);
 
 export default new Router({
+    // mode: 'history',
     routes: [
         {
             path: '/',
-            redirect: '/login'
+            redirect: '/index'
         },
         {
             path: '/readme',
@@ -52,8 +53,16 @@ export default new Router({
             ]
         },
         {
+            path: '/index',
+            component: resolve => require(['../components/page/Index.vue'], resolve)
+        },
+        {
+            path: '/join',
+            component: resolve => require(['../components/page/Join.vue'], resolve)
+        },
+        {
             path: '/login',
             component: resolve => require(['../components/page/Login.vue'], resolve)
-        },
+        }
     ]
 })
