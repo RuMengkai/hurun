@@ -218,7 +218,7 @@
                 return callback(new Error('不能为空'));
               }
               setTimeout(() => {
-                if (value.length>10) {
+                if (value.length>100) {
                   callback(new Error('长度超出限定，请适当缩减'));
                 }else{
                   callback();
@@ -231,10 +231,10 @@
                   // {name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}, {name: 'food2.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}
                 ],
                 options: [{
-                  value: '1',
+                  value: '男',
                   label: '男'
                 }, {
-                  value: '2',
+                  value: '女',
                   label: '女'
                 }],
                 ruleForm: {
@@ -365,7 +365,7 @@
                           this.$message('请上传证书');
                           return
                         }
-                        this.$alert('报名成功', '提示', {
+                        this.$alert('报名成功，请等待通知！', '提示', {
                            confirmButtonText: '确定'
                         });
                         self.$axios.post(self.url, self.ruleForm).then((res) => {
