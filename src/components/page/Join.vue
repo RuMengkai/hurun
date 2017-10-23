@@ -55,7 +55,16 @@
               <div class="mk-input">
                 <p class="name">学历</p>
                 <el-form-item prop="grade">
-                  <el-input type="input" placeholder="" v-model="ruleForm.grade"> </el-input>
+                  <!-- options_grade -->
+                  <!-- <el-input type="input" placeholder="" v-model="ruleForm.grade"> </el-input> -->
+                  <el-select prop="grade" v-model="ruleForm.grade" placeholder="">
+                    <el-option
+                      v-for="item in options_grade"
+                      :key="item.value"
+                      :label="item.label"
+                      :value="item.value">
+                    </el-option>
+                  </el-select>
                 </el-form-item>
               </div>
               <div class="mk-input">
@@ -98,7 +107,7 @@
                 </el-form-item>
               </div>
               <div class="mk-input line-100">
-                <p class="name">资格评级证书</p>
+                <p class="name">资格评级证书<span style="font-size:14px;color:#ccc;">（点击添加图片（只能上传jpg/png文件），且不超过10M）</span></p>
                 <el-upload
                   class="upload-img"
                   action="http://kofuf.kofuf.com:8081/admin/upload/normal"
@@ -113,9 +122,8 @@
                     <el-button size="small" type="primary">点击上传</el-button>
                   </div>
                   <div v-else>
-                    <el-button size="small" :disabled="true" type="primary">已上传</el-button>
+                    <el-button size="small" :disabled="true" type="primary">已&nbsp;上&nbsp;传</el-button>
                   </div>
-                  <div slot="tip" class="el-upload__tip">点击添加图片（只能上传jpg/png文件），且不超过10M</div>
                 </el-upload>
               </div>
               <div class="mk-input line-100">
@@ -142,8 +150,8 @@
             <div class="box-form">
               <div class="mk-input">
                 <p class="name">姓名</p>
-                <el-form-item prop="rec1_mame">
-                  <el-input type="input" autosize placeholder="" v-model="ruleForm.rec1_mame"> </el-input>
+                <el-form-item prop="rec1_name">
+                  <el-input type="input" autosize placeholder="" v-model="ruleForm.rec1_name"> </el-input>
                 </el-form-item>
               </div>
               <div class="mk-input">
@@ -169,8 +177,8 @@
             <div class="box-form">
               <div class="mk-input">
                 <p class="name">姓名</p>
-                <el-form-item prop="rec2_mame">
-                  <el-input type="input" autosize placeholder="" v-model="ruleForm.rec2_mame"> </el-input>
+                <el-form-item prop="rec2_name">
+                  <el-input type="input" autosize placeholder="" v-model="ruleForm.rec2_name"> </el-input>
                 </el-form-item>
               </div>
               <div class="mk-input">
@@ -192,7 +200,7 @@
                 </el-form-item>
               </div>
             </div>
-            <el-button class="active-btn" @click="submitForm('ruleForm')"></el-button>
+            <el-button :disabled="btndisabled" class="active-btn" @click="submitForm('ruleForm')"></el-button>
           </el-form >
         </div>
     </div>
@@ -226,10 +234,11 @@
               }, 500);
             };
             return {
-                url:"http://dev.kofuf.com:8081",
+                url:"http://api.kofuf.com/api/licaishi/submit",
                 fileList: [
-                  // {name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}, {name: 'food2.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}
+                  // {name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}
                 ],
+                btndisabled:false,
                 options: [{
                   value: '男',
                   label: '男'
@@ -237,32 +246,45 @@
                   value: '女',
                   label: '女'
                 }],
+                options_grade: [{
+                  value: '专科',
+                  label: '专科'
+                },{
+                  value: '本科',
+                  label: '本科'
+                }, {
+                  value: '研究生',
+                  label: '研究生'
+                },{
+                  value: '博士',
+                  label: '博士'
+                }],
                 ruleForm: {
-                    name: '1',
-                    sex: '1',
-                    age: '1',
-                    city: '1',
-                    phone: '18835227189',
-                    email: '1@qq.com',
-                    grade: '1',
-                    profession: '1',
-                    school: '1',
-                    job: '1',
-                    job_age: '1',
-                    industry: '1',
-                    job_level: '1',
-                    certificate: '',//证书
-                    domain: '1',
-                    company_name: '1',
-                    company_address: '1',
-                    rec1_mame: '1',
-                    rec1_phone: '18835227189',
-                    rec1_email: '1@qq.com',
-                    rec1_intro: '1',
-                    rec2_mame: '1',
-                    rec2_phone: '18835227189',
-                    rec2_email: '1@qq.com',
-                    rec2_intro: '1',
+                    name: '',
+                    sex: '',
+                    age: '',
+                    city: '',
+                    phone: '',
+                    email: '',
+                    grade: '',
+                    profession: '',
+                    school: '',
+                    job: '',
+                    job_age: '',
+                    industry: '',
+                    job_level: '',
+                    certificate: "",
+                    domain: '',
+                    company_name: '',
+                    company_address: '',
+                    rec1_name: '',
+                    rec1_phone: '',
+                    rec1_email: '',
+                    rec1_intro: '',
+                    rec2_name: '',
+                    rec2_phone: '',
+                    rec2_email: '',
+                    rec2_intro: '',
                 },
                 rules: {
                     age: [
@@ -319,7 +341,7 @@
                     rec1_intro: [
                         { validator: checkLength, trigger: 'blur' }
                     ],
-                    rec1_mame: [
+                    rec1_name: [
                         { validator: checkLength, trigger: 'blur' }
                     ],
                     rec1_phone: [
@@ -332,7 +354,7 @@
                     rec2_intro: [
                         { validator: checkLength, trigger: 'blur' }
                     ],
-                    rec2_mame: [
+                    rec2_name: [
                         { validator: checkLength, trigger: 'blur' }
                     ],
                     rec2_phone: [
@@ -349,10 +371,12 @@
         },
         methods: {
             handleRemove(file, fileList) {
+              this.ruleForm.certificate="";
               console.log(file, fileList);
             },
             handlePreview(file) {
               console.log(file);
+              window.open(file.response.url)
             },
             fileSuccess(data){
               this.ruleForm.certificate=data.url;
@@ -365,14 +389,18 @@
                           this.$message('请上传证书');
                           return
                         }
-                        this.$alert('报名成功，请等待通知！', '提示', {
-                           confirmButtonText: '确定'
-                        });
+                        self.btndisabled=true;
                         self.$axios.post(self.url, self.ruleForm).then((res) => {
-                            console.log(res);
-                            console.log(0);
-                            self.tableData = res.data.list;
-                            self.$router.push('/index');
+                            if (res.data.status==0) {
+                              this.$alert('报名成功，请等待通知！', '提示', {
+                                 confirmButtonText: '确定'
+                              });
+
+                              self.$router.push('/index');
+                            }else{
+                              self.btndisabled=false;
+                              this.$message(res.data.error);
+                            }
                         })
                     } else {
                         console.log('error submit!!');
@@ -527,6 +555,14 @@
   .el-select-dropdown__item:hover{
     background: @font_color;
     color: #000;
+  }
+  .el-upload-list__item{
+    margin-top: -30px !important;
+    width: 100%;
+    height: 30px;
+  }
+  .el-upload-list{
+    margin-left: 70px;
   }
   .el-upload__tip{
     color: #ccc;
