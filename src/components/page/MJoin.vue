@@ -1,10 +1,7 @@
 <template>
     <div class="index-wrap">
         <div class="bg"></div>
-        <div class="mk-content">
-          <div class="banner">
-            <img src="../../../static/img/banner.png" alt="">
-          </div>
+        <div class="mk-content-2">
           <el-form  class="mk-form" :model="ruleForm" :rules="rules" ref="ruleForm">
             <img class="mk-title" src="../../../static/img/bm.png" alt="">
             <img class="img-1" src="../../../static/img/bm1.png" alt="">
@@ -107,7 +104,7 @@
                 </el-form-item>
               </div>
               <div class="mk-input line-100">
-                <p class="name">资格评级证书<span style="font-size:14px;color:#ccc;">（点击添加图片（只能上传jpg/png文件），且不超过10M）</span></p>
+                <p class="name">资格评级证书<span style="font-size:12px;color:#ccc;">（点击添加图片，且不超过10M）</span></p>
                 <el-upload
                   class="upload-img"
                   action="http://kofuf.kofuf.com:8081/admin/upload/normal"
@@ -200,9 +197,9 @@
                 </el-form-item>
               </div>
             </div>
-            <el-button :disabled="btndisabled" class="active-btn" @click="submitForm('ruleForm')"></el-button>
           </el-form >
         </div>
+        <el-button :disabled="btndisabled" class="m-active-btn-2" @click="submitForm('ruleForm')">确认报名</el-button>
     </div>
 </template>
 
@@ -395,6 +392,7 @@
                               this.$alert('报名成功，请等待通知！', '提示', {
                                  confirmButtonText: '确定'
                               });
+
                               self.$router.push('/index');
                             }else{
                               self.btndisabled=false;
@@ -418,13 +416,13 @@
     font-size: 16px;
     color: #fff;
     background: #000;
-    .mk-content{
+    .mk-content-2{
       position: relative;
       z-index: 8;
-      width: 800px;
-      margin: auto;
-      overflow: auto;
-      height: auto;
+      margin: 0 .28rem;
+      overflow: hidden;
+      box-sizing: border-box;
+      // height: auto;
       .banner{
         img{
           width: 100%;
@@ -433,57 +431,46 @@
       }
       .mk-form{
         background: @back_color;
-        margin: 60px auto;
+        margin: 30px auto;
         padding:35px 24px;
+        position: relative;
         .mk-title{
-          width: 473px;
+          width: 100%;
           margin:0 auto 50px;
           display: block;
         }
         .img-1{
-          width:252px;
+          width:2.39rem;
           display: block;
-          margin: 82px 0 30px;
+          margin: 10px 0;
         }
         .img-2{
-          width:235px;
+          width:2.39rem;
           display: block;
-          margin: 82px 0 30px;
+          margin: 10px 0;
         }
         .img-3{
-          width:278px;
+          width:2.44rem;
           display: block;
-          margin: 82px 0 30px;
+          margin: 10px 0;
         }
-        .active-btn{
-          display: block;
-          margin: 57px auto;
-          width: 240px;
-          height: 80px;
-          background: url(../../../static/img/btn_confire.png);
-          background-size: 240px 80px;
-          cursor: pointer;
-          &:hover{
-            background: url(../../../static/img/btn_confire_hover.png);
-            background-size: 240px 80px;
-          }
-        }
+
       }
     }
     .bg{
       width: 100%;
       height: 100%;
-      background: url(../../../static/img/bg.jpg);
+      background: url(../../../static/img/m-bg.jpg);
       background-size: 100% 100%;
       position: fixed;
     }
   }
   .box-form{
-    margin-left: 30px;
+    margin-left: 0px;
     overflow: hidden;
     .mk-input{
-      width: 244px;
-      margin-left: 70px;
+      width: 100%;
+      margin-left: 0px;
       float: left;
       overflow: hidden;
       .name{
@@ -507,7 +494,7 @@
         resize:none;
       }
       .el-select {
-        width: 242px;
+        width: 100%;
       }
       .el-upload--text{
         border:none;
@@ -525,25 +512,24 @@
 
     }
     .mk-input.line-100{
-      width: 557px;
+      // width: 557px;
     }
     .upload-img{
-      margin: 10px 45px;
+      margin: 10px 0px;
     }
   }
   .tuijian-1{
-    color: @font_color ;
+    line-height: 40px;
     font-size: 18px;
     margin-left: 0px;
     position: relative;
-    top: 28px;
   }
   .el-select-dropdown{
     border: 1px solid @font_color !important;
     background-color:#000 !important;
     color: #fff !important;
-    min-width: 80px !important;
-    margin-left: 163px;
+    // min-width: 80px !important;
+    // margin-left: 163px;
     text-align: center !important;
   }
   .el-select-dropdown__item{
@@ -570,5 +556,19 @@
   .el-button{
     border: none;
     border-radius: 0;
+  }
+  .m-active-btn-2{
+    height: 1rem;
+    width: 100%;
+    color: #333;
+    text-align: center;
+    background: #ebbc6d;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    font-size: 18px;
+  }
+  .el-button:focus, .el-button:hover{
+    color: #333;
   }
 </style>

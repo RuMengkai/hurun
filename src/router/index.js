@@ -3,11 +3,13 @@ import Router from 'vue-router';
 
 Vue.use(Router);
 export default new Router({
-    // mode: 'history',
+    mode: 'history',
+    base: 'licaishi',
     routes: [
         {
             path: '/',
-            redirect: '/index'
+            // redirect: '/index'
+            component: resolve => require(['../components/page/Index.vue'], resolve)
         },
         {
             path: '/index',
@@ -17,6 +19,18 @@ export default new Router({
             path: '/join',
             component: resolve => require(['../components/page/Join.vue'], resolve)
         },
+        {
+            path: '/m-index',
+            component: resolve => require(['../components/page/MIndex.vue'], resolve)
+        },
+        {
+            path: '/m-join',
+            component: resolve => require(['../components/page/MJoin.vue'], resolve)
+        }
+        // {
+        //     path: '/*',
+        //     component: resolve => require(['../components/page/Index.vue'], resolve)
+        // },
         // {
         //     path: '/readme',
         //     component: resolve => require(['../components/common/Home.vue'], resolve),
