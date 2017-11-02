@@ -5,7 +5,7 @@
           <div class="banner">
             <img src="../../../static/img/banner.png" alt="">
           </div>
-          <el-form  class="mk-form" :model="ruleForm" :rules="rules" ref="ruleForm">
+          <el-form  class="mk-form" :model="ruleForm"  ref="ruleForm">
             <img class="mk-title" src="../../../static/img/bm.png" alt="">
             <img class="img-1" src="../../../static/img/bm1.png" alt="">
             <div class="box-form">
@@ -17,7 +17,7 @@
               </div>
               <div class="mk-input">
                 <p class="name">性别</p>
-                <el-form-item prop="name">
+                <el-form-item prop="sex">
                   <el-select prop="sex" v-model="ruleForm.sex" placeholder="">
                     <el-option
                       v-for="item in options"
@@ -110,7 +110,7 @@
                 <p class="name">资格评级证书<span style="font-size:14px;color:#ccc;">（点击添加图片（只能上传jpg/png文件），且不超过10M）</span></p>
                 <el-upload
                   class="upload-img"
-                  action="http://kofuf.kofuf.com:8081/admin/upload/normal"
+                  action="http://api.kofuf.com/api/upload/normal"
                   :headers="{token:'751fc99cd6ca42ddba3e31ead852df32'}"
                   :multiple="false"
                   :on-preview="handlePreview"
@@ -207,6 +207,7 @@
 </template>
 
 <script>
+import { isMobile,weixinShare } from '../../assets/js/common.js'
     export default {
         data: function(){
             var checkMobile = (rule, value, callback) => {
@@ -253,8 +254,8 @@
                   value: '本科',
                   label: '本科'
                 }, {
-                  value: '研究生',
-                  label: '研究生'
+                  value: '硕士',
+                  label: '硕士'
                 },{
                   value: '博士',
                   label: '博士'
@@ -285,6 +286,7 @@
                     rec2_phone: '',
                     rec2_email: '',
                     rec2_intro: '',
+                    channel:this.$route.query.channel
                 },
                 rules: {
                     age: [
@@ -314,7 +316,7 @@
                         { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }
                     ],
                     grade: [
-                        { validator: checkLength, trigger: 'blur' }
+                        { validator: checkLength, trigger: 'change' }
                     ],
                     industry: [
                         { validator: checkLength, trigger: 'blur' }
@@ -364,7 +366,7 @@
                         { validator: checkLength, trigger: 'blur' }
                     ],
                     sex: [
-                        { validator: checkLength, trigger: 'blur' }
+                        { validator: checkLength, trigger: 'change' }
                     ],
                 }
             }
@@ -375,7 +377,6 @@
               console.log(file, fileList);
             },
             handlePreview(file) {
-              console.log(file);
               window.open(file.response.url)
             },
             fileSuccess(data){
@@ -387,7 +388,7 @@
                     if (valid) {
                         if (self.ruleForm.certificate=="") {
                           this.$message('请上传证书');
-                          return
+                          // return
                         }
                         self.btndisabled=true;
                         self.$axios.post(self.url, self.ruleForm).then((res) => {
@@ -407,6 +408,11 @@
                     }
                 });
             }
+        },
+        mounted(){
+          if (isMobile()) {
+            this.$router.push('/m-join/?channel='+this.$route.query.channel);
+          }
         }
     }
 </script>

@@ -107,7 +107,7 @@
                 <p class="name">资格评级证书<span style="font-size:12px;color:#ccc;">（点击添加图片，且不超过10M）</span></p>
                 <el-upload
                   class="upload-img"
-                  action="http://kofuf.kofuf.com:8081/admin/upload/normal"
+                  action="http://api.kofuf.com/api/upload/normal"
                   :headers="{token:'751fc99cd6ca42ddba3e31ead852df32'}"
                   :multiple="false"
                   :on-preview="handlePreview"
@@ -250,8 +250,8 @@
                   value: '本科',
                   label: '本科'
                 }, {
-                  value: '研究生',
-                  label: '研究生'
+                  value: '硕士',
+                  label: '硕士'
                 },{
                   value: '博士',
                   label: '博士'
@@ -282,6 +282,7 @@
                     rec2_phone: '',
                     rec2_email: '',
                     rec2_intro: '',
+                    channel:this.$route.query.channel
                 },
                 rules: {
                     age: [
@@ -311,7 +312,7 @@
                         { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }
                     ],
                     grade: [
-                        { validator: checkLength, trigger: 'blur' }
+                        { validator: checkLength, trigger: 'change' }
                     ],
                     industry: [
                         { validator: checkLength, trigger: 'blur' }
@@ -361,7 +362,7 @@
                         { validator: checkLength, trigger: 'blur' }
                     ],
                     sex: [
-                        { validator: checkLength, trigger: 'blur' }
+                        { validator: checkLength, trigger: 'change' }
                     ],
                 }
             }

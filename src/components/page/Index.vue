@@ -19,19 +19,66 @@
             <div class="au-left">
               <img class="title-center" src="../../../static/img/02.png" alt="">
               <p class="au-con">
-                本次评选活动面向银行、保险、证券、基金、投资、信托、第三方理财等多领域的理财精英
+                凡持有CFP、AFP资格认证、理财规划师或相关资格认证，符合国家相关理财从业资格标准的专业理财师，无地域限制，均可报名参加；<br>
+                本次评选活动面向银行、保险、证券、基金、投资、信托、第三理财、综合理财等机构的理财精英。
               </p>
             </div>
-            <div class="au-right">
+            <!-- <div class="au-right">
               <img class="title-center" src="../../../static/img/03.png" alt="">
               <p class="au-con">
-                评选规则借鉴了xxxx。（需美信补充候选人标准）
-衡量标准不单单取决于他们个人成就的大小，还有他们的行业价值和社会价值。
+                评选规则不单单取决于他们个人成就的大小，还有他们的行业价值和社会价值。同时会邀请40位财富管理业内最顶尖的专家组成《胡润中国金牌理财师TOP100》长老评审团，为本次评选活动提供专业支持。
               </p>
-            </div>
+            </div> -->
             <img class="au-img" src="../../../static/img/02.jpg" alt="">
           </div>
           <div class="active-sign">
+            <img class="sp-img" src="../../../static/img/03.png" alt="">
+            <div class="biaozun">
+              本着公平、公正、透明、权威的原则，2017《胡润中国金牌理财师TOP100》共设置了全国报名、复赛、全国终审和暨颁奖礼四个环节。
+            </div>
+            <div class="box-liucheng">
+              <div class="line">
+                <span class="cle c-1"></span>
+                <span class="cle c-2"></span>
+                <span class="cle c-3"></span>
+                <span class="cle c-4"></span>
+              </div>
+              <div class="baoming">
+                <p class="p-1"> 全国报名阶段 </p>
+                <p class="p-2"> 2017年10月30日-2017年11月17日 </p>
+                <div class="baoming-fl fl">
+                  <div>·	网络报名——理财师通过本次活动指定报名渠道填写报名资料。</div>
+                  <div>·	本次评审长老团推荐精英理财师——每位长老团成员推荐精英理财师不超过5位。</div>
+                  <div>·	确认候选理财师名单，评审长老团根据真实报名资料，综合选拔约1000名选手进入复赛。主办方于2017年12月1日前公布筛选结果，并通知入围理财师参与下一轮比赛。</div>
+                </div>
+              </div>
+              <div class="fusai">
+                <p class="p-1"> 复赛阶段 </p>
+                <p class="p-2"> 2017年11月20日-2017年12月15日 </p>
+                <div class="fusai-fl fl">
+                  <div>·	对进入复赛理财师进行报名材料真实性调查，若与事实不符，将取消参赛资格。</div>
+                  <div>·	同时评审长老团将从候选理财师的专业性、技能、职业素质、资格职称、从业年限、学历、荣誉、服务质量、同行口碑等角度进行综合打分，根据最终得分选拔出前200位精英理财师进入总决赛。</div>
+                </div>
+              </div>
+              <div class="zhongshen">
+                <p class="p-1"> 全国终审 </p>
+                <p class="p-2"> 2017年12月18日-2017年12月29日 </p>
+                <div class="zhongshen-fl fl">
+                  <div>·	活动主动方同时会通过调研，全面、深入了解中国理财师行业发展现状、特点及趋势，通过理财者、行业权威专家和相关研究院深度访谈调研，制定一份帮助理财者快速甄选优秀理财师的指南手册。</div>
+                  <div>·	最终根据优秀理财师的指南手册、理财者报名材料、评审长老团评议结果，遴选出2017《胡润中国金牌理财师TOP100》榜单，并通过最大限度的媒体曝光，为行业树立标杆和增强行业影响力。</div>
+                </div>
+              </div>
+              <div class="banjiang">
+                <p class="p-1"> 暨颁奖礼 </p>
+                <p class="p-2"> 2018年1月15日 </p>
+                <div class="banjiang-fl fl">
+                  <div>·	2017《中国理财师特别报告》发布会</div>
+                  <div>·	2017《胡润金牌理财师TOP100》发布会</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="active-sign">
             <div class="sign-method">
               <div class="sm-left">
                 <img src="../../../static/img/04.png" alt="">
@@ -55,8 +102,12 @@
               </div>
               <img class="sp-img" src="../../../static/img/03.jpg" alt="">
             </div>
+          </div> -->
+          <div class="prize">
+            <img src="../../../static/img/08.png" alt="">
+            <p>胡润中国金牌理财师TOP100</p>
           </div>
-          <router-link class="active-btn" to="/join"></router-link>
+          <router-link class="active-btn" :to="{ path: '/join',query: { channel: channel }}"></router-link>
           <div class="sponsor">
             <img src="../../../static/img/07.png" alt="">
             <div class="box">
@@ -65,7 +116,6 @@
               </div>
               <div class="sb-con">
                 胡润百富，是一个拥有中国高净值人群垂直类大数据，由首席调研员胡润带领的专业数据调研机构。胡润百富拥有丰富的高端调研经验和资源，为众多行业提供全方位深度专业权威的调查服务。
-
               </div>
             </div>
           </div>
@@ -80,14 +130,11 @@
             <div class="o-right">
               <img class="img" src="../../../static/img/logo_kofuf.png" alt="">
               <p class="o-con">
-                功夫财经致力于联动最出色的财经学者，提供最优质的原创内容，打造中国规模最大的、粘性最高的财富命运共同体，以新型金融服务平台为终极己任，解决中产焦虑，提升国民财商。
+                “功夫财经”于2015年11正式上线，由中国知名财经媒体人王牧笛创立。“功夫财经”定位于国民财商提升者，两年内迅速奠定了国内财经新媒体头部平台的地位。平台集结了马光远、王福重、时寒冰、李大霄、胡润、琢磨先生、肖锋等国内最强的经济学者天团， 以及数位金融及投资领域KOL，通过音频、短视频、时评文章、财经脱口秀、付费知识内容、线下大课、游学等多种产品形态，致力服务于新中产阶层及较高净值人群，打造国内最活跃的财富社群，立足成为链接内容、社群与撮合交易一站式新型金融服务商。
               </p>
             </div>
           </div>
-          <div class="prize">
-            <img src="../../../static/img/08.png" alt="">
-            <p>胡润中国金牌理财师TOP100</p>
-          </div>
+
         </div>
     </div>
 </template>
@@ -97,6 +144,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
     export default {
         data: function(){
             return {
+                channel:this.$route.query.channel,
                 ruleForm: {
                     username: '',
                     password: ''
@@ -104,8 +152,9 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
             }
         },
         mounted () {
+          console.log(this.$route.query.channel);
           if (isMobile()) {
-            this.$router.push('/m-index');
+            this.$router.push('/m-index/?channel='+this.$route.query.channel);
           }
         },
         methods: {
@@ -115,6 +164,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
 
 <style scoped lang="less">
   @back_color:#121416;
+  @font_color:#ebbc6c;
   .index-wrap{
     font-size: 16px;
     color: #fff;
@@ -160,8 +210,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
         padding:35px 24px;
         .au-left{
           overflow: hidden;
-          float: left;
-          width: 330px;
+          text-align: center;
           img{
             width: 120px;
           }
@@ -177,6 +226,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
         .au-con{
           margin: 40px 0;
           line-height: 30px;
+          text-align: left;
         }
         .au-img{
           width: 100%;
@@ -186,47 +236,183 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
         background: @back_color;
         margin-top: 60px;
         padding:35px 24px;
-        .sign-method{
-          overflow: hidden;
-          .sm-left{
-            float: left;
-            width:330px;
-            img{
-              width: 120px;
-            }
-            .sm-con{
-              line-height: 30px;
-              margin: 40px 0;
-            }
-          }
-          .sm-img{
-            float: right;
-            width: 320px;
-          }
+        img{
+          width: 226px;
+          margin:0 auto 50px;
+          display: block;
         }
-        .sign-process{
-          margin-top: 10px;
-          overflow: hidden;
+        .biaozun{
+          color: #000;
+          padding:30px 10px;
+          background: url(../../../static/img/8-8.png);
+          line-height: 28px;
+        }
+        .box-liucheng{
           position: relative;
-          .sp-right{
-            height: auto;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width:330px;
-            img{
-              width: 120px;
+          height:550px;
+          .line{
+            position: relative;
+            margin:43px auto;
+            height:434px;
+            width:1px;
+            background: @font_color;
+            padding-top: 1px;
+            .cle{
+              position: absolute;
+              margin-left: -7px;
+              display: block;
+              width: 15px;
+              height: 15px;
+              border-radius: 10px;
+              background: @font_color;
+              overflow: hidden;
             }
-            .sp-con{
-              line-height: 30px;
-              margin: 40px 0;
+            .c-1{
+              margin-top: -1px;
+            }
+            .c-2{
+              margin-top: 138px;
+            }
+            .c-3{
+              margin-top: 280px;
+            }
+            .c-4{
+              margin-top: 428px;
             }
           }
-          .sp-img{
-            float: left;
-            width: 320px;
+          .p-1{
+            color: @font_color;
+            line-height: 30px;
+            font-size: 20px;
+          }
+          .p-2{
+            color: #ddd;
+            line-height: 30px;
+            font-size: 14px;
+          }
+          .baoming{
+            position: absolute;
+            width: 345px;
+            top: 0;
+            text-align: right;
+            cursor: pointer;
+            &:hover{
+              .baoming-fl{
+                display: block;
+              }
+            }
+          }
+          .baoming-fl{
+            left: 389px;
+            top: 0;
+          }
+          .fusai{
+            position: absolute;
+            width: 345px;
+            top: 138px;
+            right: 0;
+            text-align: left;
+            cursor: pointer;
+            &:hover{
+              .fusai-fl{
+                display: block;
+              }
+            }
+          }
+          .fusai-fl{
+            left: -389px;
+            top: 0;
+          }
+          .zhongshen{
+            position: absolute;
+            width: 345px;
+            top: 275px;
+            text-align: right;
+            cursor: pointer;
+            &:hover{
+              .zhongshen-fl{
+                display: block;
+              }
+            }
+          }
+          .zhongshen-fl{
+            left: 389px;
+            top: 0;
+          }
+          .banjiang{
+            position: absolute;
+            width: 345px;
+            top: 430px;
+            right: 0;
+            text-align: left;
+            cursor: pointer;
+            &:hover{
+              .banjiang-fl{
+                display: block;
+              }
+            }
+          }
+          .banjiang-fl{
+            left: -389px;
+            top: 0;
+          }
+          .fl{
+            font-size: 14px;
+            line-height: 24px;
+            text-align: left;
+            position: absolute;
+            display: none;
+            width: 345px;
+            padding: 10px;
+            // height: 50px;
+            color: #000;
+            z-index: 100;
+            text-align: justify;
+            box-sizing: border-box;
+            background: url(../../../static/img/8-8.png);
           }
         }
+        // .sign-method{
+        //   overflow: hidden;
+        //   .sm-left{
+        //     float: left;
+        //     width:330px;
+        //     img{
+        //       width: 120px;
+        //     }
+        //     .sm-con{
+        //       line-height: 30px;
+        //       margin: 40px 0;
+        //     }
+        //   }
+        //   .sm-img{
+        //     float: right;
+        //     width: 320px;
+        //   }
+        // }
+        // .sign-process{
+        //   margin-top: 10px;
+        //   overflow: hidden;
+        //   position: relative;
+        //   .sp-right{
+        //     height: auto;
+        //     position: absolute;
+        //     bottom: 0;
+        //     right: 0;
+        //     width:330px;
+        //     img{
+        //       width: 120px;
+        //     }
+        //     .sp-con{
+        //       line-height: 30px;
+        //       margin: 40px 0;
+        //     }
+        //   }
+        //   .sp-img{
+        //     float: left;
+        //     width: 320px;
+        //   }
+        // }
       }
       .active-btn{
         display: block;
