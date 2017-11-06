@@ -197,6 +197,7 @@
                 </el-form-item>
               </div>
             </div>
+            <el-checkbox v-model="checked">已阅读并同意</el-checkbox><a @click="protocol()" class="protocol">报名协议</a>
           </el-form >
         </div>
         <el-button :disabled="btndisabled" class="m-active-btn-2" @click="submitForm('ruleForm')">确认报名</el-button>
@@ -231,6 +232,7 @@
               }, 500);
             };
             return {
+                checked: true,
                 url:"http://api.kofuf.com/api/licaishi/submit",
                 fileList: [
                   // {name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}
@@ -368,6 +370,9 @@
             }
         },
         methods: {
+            protocol(){
+              this.$router.push('/protocol');
+            },
             handleRemove(file, fileList) {
               this.ruleForm.certificate="";
               console.log(file, fileList);
@@ -388,10 +393,15 @@
                           return
                         }
                         self.btndisabled=true;
-                        self.$axios.post(self.url, self.ruleForm).then((res) => {
+                        if(!self.checked){
+                          this.$message('请同意相关协议');
+                          self.btndisabled=false;
+                          return false
+                        }else{
+                          self.$axios.post(self.url, self.ruleForm).then((res) => {
                             if (res.data.status==0) {
                               this.$alert('报名成功，请等待通知！', '提示', {
-                                 confirmButtonText: '确定'
+                                confirmButtonText: '确定'
                               });
 
                               self.$router.push('/index');
@@ -399,7 +409,8 @@
                               self.btndisabled=false;
                               this.$message(res.data.error);
                             }
-                        })
+                          })
+                        }
                     } else {
                         console.log('error submit!!');
                         return false;
@@ -571,5 +582,25 @@
   }
   .el-button:focus, .el-button:hover{
     color: #333;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: @font_color;
+    border-color:@font_color;
+  }
+  .el-checkbox__inner{
+    background: none;
+  }
+  .el-checkbox{
+    color: #ddd;
+    margin-left: 0;
+  }
+  .protocol{
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    &:hover{
+      color: @font_color;
+    }
   }
 </style>

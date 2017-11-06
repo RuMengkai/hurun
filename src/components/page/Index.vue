@@ -69,7 +69,7 @@
                 </div>
               </div>
               <div class="banjiang">
-                <p class="p-1"> 暨颁奖礼 </p>
+                <p class="p-1"> TOP100理财师颁奖礼 </p>
                 <p class="p-2"> 2018年1月15日 </p>
                 <div class="banjiang-fl fl">
                   <div>·	2017《中国理财师特别报告》发布会</div>
@@ -105,7 +105,7 @@
           </div> -->
           <div class="prize">
             <img src="../../../static/img/08.png" alt="">
-            <p>胡润中国金牌理财师TOP100</p>
+            <p>胡润·中国金牌理财师TOP100</p>
           </div>
           <router-link class="active-btn" :to="{ path: '/join',query: { channel: channel }}"></router-link>
           <div class="sponsor">
@@ -122,13 +122,13 @@
           <div class="organizer">
             <img src="../../../static/img/06.png" alt="">
             <div class="o-left">
-              <img class="img" src="../../../static/img/logo_meixin.png" alt="">
+              <a href="https://www.meixinglobal.com" target="_blank"><img class="img" src="../../../static/img/logo_meixin.png" alt=""></a>
               <p class="o-con">
-                美信全球是基于互联网的全球投资产品展示和交易平台。自2015年成立于纽约以来，美信已经在北京、上海等多处开设办事处，依托核心产品MX Terminal为理财顾问公司、金融机构、拥有高净值客户的非金融机构等提供一站式服务，逐步成长为行业领先的全球资产服务和交易解决方案提供商。
+                美信全球（原美信金融，以下简称“美信”）是一个基于互联网的全球投资产品展示和交易平台。自2015年成立于纽约以来，美信已经在北京、上海、深圳、广州、成都、重庆、杭州、太原等多处开设办事处，依托核心产品MX Terminal为理财顾问公司、金融机构、拥有高净值客户的非金融机构等提供一站式服务，逐步成长为行业领先的全球资产服务和交易解决方案提供商，并吸引了大批优质全球资管方挂牌入驻美信平台，致力于将全球资产配置智慧植根于全球财富管理市场。
               </p>
             </div>
             <div class="o-right">
-              <img class="img" src="../../../static/img/logo_kofuf.png" alt="">
+              <a href="https://www.kofuf.com" target="_blank"><img class="img" src="../../../static/img/logo_kofuf.png" alt=""></a>
               <p class="o-con">
                 “功夫财经”于2015年11正式上线，由中国知名财经媒体人王牧笛创立。“功夫财经”定位于国民财商提升者，两年内迅速奠定了国内财经新媒体头部平台的地位。平台集结了马光远、王福重、时寒冰、李大霄、胡润、琢磨先生、肖锋等国内最强的经济学者天团， 以及数位金融及投资领域KOL，通过音频、短视频、时评文章、财经脱口秀、付费知识内容、线下大课、游学等多种产品形态，致力服务于新中产阶层及较高净值人群，打造国内最活跃的财富社群，立足成为链接内容、社群与撮合交易一站式新型金融服务商。
               </p>
@@ -235,7 +235,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
       .active-sign{
         background: @back_color;
         margin-top: 60px;
-        padding:35px 24px;
+        padding:35px 24px 0;
         img{
           width: 226px;
           margin:0 auto 50px;
@@ -249,7 +249,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
         }
         .box-liucheng{
           position: relative;
-          height:550px;
+          height:520px;
           .line{
             position: relative;
             margin:43px auto;
@@ -473,6 +473,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
           overflow: hidden;
           float: right;
           width: 330px;
+          margin-top: -10px;
           .img{
             width: 120px;
             margin: 0;
@@ -485,6 +486,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
       }
       .prize{
         .title-img;
+        margin-top: 0px !important;
         p{
           text-align: center;
         }

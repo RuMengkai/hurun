@@ -26,7 +26,11 @@ export default new Router({
         {
             path: '/m-join',
             component: resolve => require(['../components/page/MJoin.vue'], resolve)
-        }
+        },
+        {
+            path: '/protocol',
+            component: resolve => require(['../components/page/Protocol.vue'], resolve)
+        },
         // {
         //     path: '/*',
         //     component: resolve => require(['../components/page/Index.vue'], resolve)

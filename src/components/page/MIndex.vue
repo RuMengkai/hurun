@@ -54,7 +54,7 @@
               <el-collapse-item >
                 <template slot="title">
                   <span class="cle-4"></span>
-                  <p class="p-title">暨颁奖礼</p>
+                  <p class="p-title">TOP100理财师颁奖礼</p>
                   <p class="p-date">2018年1月15日</p>
                 </template>
                 <div>·	2017《中国理财师特别报告》发布会</div>
@@ -74,8 +74,8 @@
             </div> -->
             <div class="ad-bg-3">
               <img class="title-center" src="../../../static/img/08.png" alt="">
-              <p class="ad-con">
-                胡润中国金牌理财师TOP100
+              <p class="ad-con center-ad-con">
+                胡润·中国金牌理财师TOP100
               </p>
               <img class="title-center" src="../../../static/img/07.png" alt="">
               <img class="title-center-2" src="../../../static/img/logo_hurun.png" alt="">
@@ -85,7 +85,7 @@
               <img class="title-center" src="../../../static/img/06.png" alt="">
               <img class="title-center-2" src="../../../static/img/logo_meixin.png" alt="">
               <p class="ad-con">
-                美信全球是基于互联网的全球投资产品展示和交易平台。自2015年成立于纽约以来，美信已经在北京、上海等多处开设办事处，依托核心产品MX Terminal为理财顾问公司、金融机构、拥有高净值客户的非金融机构等提供一站式服务，逐步成长为行业领先的全球资产服务和交易解决方案提供商。
+                美信全球（原美信金融，以下简称“美信”）是一个基于互联网的全球投资产品展示和交易平台。自2015年成立于纽约以来，美信已经在北京、上海、深圳、广州、成都、重庆、杭州、太原等多处开设办事处，依托核心产品MX Terminal为理财顾问公司、金融机构、拥有高净值客户的非金融机构等提供一站式服务，逐步成长为行业领先的全球资产服务和交易解决方案提供商，并吸引了大批优质全球资管方挂牌入驻美信平台，致力于将全球资产配置智慧植根于全球财富管理市场。
               </p>
               <img class="title-center-2" src="../../../static/img/logo_kofuf.png" alt="">
               <p class="ad-con">
@@ -184,6 +184,11 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
           box-sizing: border-box;
           line-height: 26px;
           font-size: 14px;
+        }
+        .ad-con.center-ad-con{
+          text-align: center;
+          color: #fff;
+          font-size: 16px;
         }
       }
     }

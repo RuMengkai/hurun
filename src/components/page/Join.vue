@@ -5,7 +5,7 @@
           <div class="banner">
             <img src="../../../static/img/banner.png" alt="">
           </div>
-          <el-form  class="mk-form" :model="ruleForm"  ref="ruleForm">
+          <el-form  class="mk-form" :model="ruleForm" :rules="rules" ref="ruleForm">
             <img class="mk-title" src="../../../static/img/bm.png" alt="">
             <img class="img-1" src="../../../static/img/bm1.png" alt="">
             <div class="box-form">
@@ -200,6 +200,7 @@
                 </el-form-item>
               </div>
             </div>
+            <el-checkbox v-model="checked">已阅读并同意</el-checkbox><a href="./protocol" target="_blank" class="protocol">报名协议</a>
             <el-button :disabled="btndisabled" class="active-btn" @click="submitForm('ruleForm')"></el-button>
           </el-form >
         </div>
@@ -235,6 +236,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
               }, 500);
             };
             return {
+                checked: true,
                 url:"http://api.kofuf.com/api/licaishi/submit",
                 fileList: [
                   // {name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}
@@ -372,6 +374,9 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
             }
         },
         methods: {
+            protocol(){
+              this.$router.push('/protocol');
+            },
             handleRemove(file, fileList) {
               this.ruleForm.certificate="";
               console.log(file, fileList);
@@ -385,23 +390,30 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
             submitForm(formName) {
                 const self = this;
                 self.$refs[formName].validate((valid) => {
+                  console.log(valid);
                     if (valid) {
                         if (self.ruleForm.certificate=="") {
                           this.$message('请上传证书');
-                          // return
+                          return false
                         }
                         self.btndisabled=true;
-                        self.$axios.post(self.url, self.ruleForm).then((res) => {
+                        if(!self.checked){
+                          this.$message('请同意相关协议');
+                          self.btndisabled=false;
+                          return false
+                        }else{
+                          self.$axios.post(self.url, self.ruleForm).then((res) => {
                             if (res.data.status==0) {
                               this.$alert('报名成功，请等待通知！', '提示', {
-                                 confirmButtonText: '确定'
+                                confirmButtonText: '确定'
                               });
                               self.$router.push('/index');
                             }else{
                               self.btndisabled=false;
                               this.$message(res.data.error);
                             }
-                        })
+                          })
+                        }
                     } else {
                         console.log('error submit!!');
                         return false;
@@ -576,5 +588,25 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
   .el-button{
     border: none;
     border-radius: 0;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: @font_color;
+    border-color:@font_color;
+  }
+  .el-checkbox__inner{
+    background: none;
+  }
+  .el-checkbox{
+    color: #ddd;
+    margin-left: 100px;
+  }
+  .protocol{
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    &:hover{
+      color: @font_color;
+    }
   }
 </style>
