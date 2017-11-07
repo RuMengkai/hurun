@@ -113,6 +113,7 @@
                   :on-preview="handlePreview"
                   :on-remove="handleRemove"
                   :file-list="fileList"
+                  :on-error="uploadFileError"
                   :on-success="fileSuccess"
                   :disabled="ruleForm.certificate!=''">
                   <div v-if="ruleForm.certificate==''">
@@ -143,7 +144,7 @@
               </div>
             </div>
             <img class="img-3" src="../../../static/img/bm3.png" alt="">
-            <p class="tuijian-1">推荐人1</p>
+            <p class="tuijian-1">推荐人</p>
             <div class="box-form">
               <div class="mk-input">
                 <p class="name">姓名</p>
@@ -170,7 +171,7 @@
                 </el-form-item>
               </div>
             </div>
-            <p class="tuijian-1">推荐人2</p>
+            <!-- <p class="tuijian-1">推荐人2</p>
             <div class="box-form">
               <div class="mk-input">
                 <p class="name">姓名</p>
@@ -196,7 +197,7 @@
                   <el-input type="textarea" autosize placeholder="" v-model="ruleForm.rec2_intro"> </el-input>
                 </el-form-item>
               </div>
-            </div>
+            </div> -->
             <el-checkbox v-model="checked">已阅读并同意</el-checkbox><a @click="protocol()" class="protocol">报名协议</a>
           </el-form >
         </div>
@@ -280,10 +281,10 @@
                     rec1_phone: '',
                     rec1_email: '',
                     rec1_intro: '',
-                    rec2_name: '',
-                    rec2_phone: '',
-                    rec2_email: '',
-                    rec2_intro: '',
+                    // rec2_name: '',
+                    // rec2_phone: '',
+                    // rec2_email: '',
+                    // rec2_intro: '',
                     channel:this.$route.query.channel
                 },
                 rules: {
@@ -347,19 +348,19 @@
                     rec1_phone: [
                         { validator: checkMobile, trigger: 'blur' }
                     ],
-                    rec2_email: [
-                        { required: true, message: '不能为空！', trigger: 'blur' },
-                        { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }
-                    ],
-                    rec2_intro: [
-                        { validator: checkLength, trigger: 'blur' }
-                    ],
-                    rec2_name: [
-                        { validator: checkLength, trigger: 'blur' }
-                    ],
-                    rec2_phone: [
-                        { validator: checkMobile, trigger: 'blur' }
-                    ],
+                    // rec2_email: [
+                    //     { required: true, message: '不能为空！', trigger: 'blur' },
+                    //     { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }
+                    // ],
+                    // rec2_intro: [
+                    //     { validator: checkLength, trigger: 'blur' }
+                    // ],
+                    // rec2_name: [
+                    //     { validator: checkLength, trigger: 'blur' }
+                    // ],
+                    // rec2_phone: [
+                    //     { validator: checkMobile, trigger: 'blur' }
+                    // ],
                     school: [
                         { validator: checkLength, trigger: 'blur' }
                     ],
@@ -370,6 +371,9 @@
             }
         },
         methods: {
+            uploadFileError(){
+              this.$message('失败，检查文件大小是否超出限制');
+            },
             protocol(){
               this.$router.push('/protocol');
             },
@@ -403,7 +407,6 @@
                               this.$alert('报名成功，请等待通知！', '提示', {
                                 confirmButtonText: '确定'
                               });
-
                               self.$router.push('/index');
                             }else{
                               self.btndisabled=false;
@@ -602,5 +605,9 @@
     &:hover{
       color: @font_color;
     }
+  }
+  .el-message-box{
+    max-width: 400px;
+    width: auto;
   }
 </style>

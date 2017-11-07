@@ -34,7 +34,7 @@
           <div class="active-sign">
             <img class="sp-img" src="../../../static/img/03.png" alt="">
             <div class="biaozun">
-              本着公平、公正、透明、权威的原则，2017《胡润中国金牌理财师TOP100》共设置了全国报名、复赛、全国终审和暨颁奖礼四个环节。
+              本着公平、公正、透明、权威的原则，2017《胡润中国金牌理财师TOP100》共设置了全国报名、复赛、全国终审和TOP100理财师颁奖典礼四个环节。
             </div>
             <div class="box-liucheng">
               <div class="line">
@@ -45,7 +45,7 @@
               </div>
               <div class="baoming">
                 <p class="p-1"> 全国报名阶段 </p>
-                <p class="p-2"> 2017年10月30日-2017年11月17日 </p>
+                <p class="p-2"> 2017年10月30日-2017年11月30日 </p>
                 <div class="baoming-fl fl">
                   <div>·	网络报名——理财师通过本次活动指定报名渠道填写报名资料。</div>
                   <div>·	本次评审长老团推荐精英理财师——每位长老团成员推荐精英理财师不超过5位。</div>
@@ -54,7 +54,7 @@
               </div>
               <div class="fusai">
                 <p class="p-1"> 复赛阶段 </p>
-                <p class="p-2"> 2017年11月20日-2017年12月15日 </p>
+                <p class="p-2"> 2017年12月1日-2017年12月15日 </p>
                 <div class="fusai-fl fl">
                   <div>·	对进入复赛理财师进行报名材料真实性调查，若与事实不符，将取消参赛资格。</div>
                   <div>·	同时评审长老团将从候选理财师的专业性、技能、职业素质、资格职称、从业年限、学历、荣誉、服务质量、同行口碑等角度进行综合打分，根据最终得分选拔出前200位精英理财师进入总决赛。</div>
@@ -69,7 +69,7 @@
                 </div>
               </div>
               <div class="banjiang">
-                <p class="p-1"> TOP100理财师颁奖礼 </p>
+                <p class="p-1"> TOP100理财师颁奖典礼 </p>
                 <p class="p-2"> 2018年1月15日 </p>
                 <div class="banjiang-fl fl">
                   <div>·	2017《中国理财师特别报告》发布会</div>
