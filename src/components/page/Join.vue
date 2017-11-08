@@ -146,7 +146,7 @@
               </div>
             </div>
             <img class="img-3" src="../../../static/img/bm3.png" alt="">
-            <p class="tuijian-1">推荐人</p>
+            <p class="tuijian-1">推荐人<br>(可为空)</p>
             <div class="box-form">
               <div class="mk-input">
                 <p class="name">姓名</p>
@@ -339,18 +339,18 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
                         { validator: checkLength, trigger: 'blur' }
                     ],
                     rec1_email: [
-                        { required: true, message: '不能为空！', trigger: 'blur' },
+                        // { required: true, message: '不能为空！', trigger: 'blur' },
                         { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }
                     ],
-                    rec1_intro: [
-                        { validator: checkLength, trigger: 'blur' }
-                    ],
-                    rec1_name: [
-                        { validator: checkLength, trigger: 'blur' }
-                    ],
-                    rec1_phone: [
-                        { validator: checkMobile, trigger: 'blur' }
-                    ],
+                    // rec1_intro: [
+                    //     { validator: checkLength, trigger: 'blur' }
+                    // ],
+                    // rec1_name: [
+                    //     { validator: checkLength, trigger: 'blur' }
+                    // ],
+                    // rec1_phone: [
+                    //     { validator: checkMobile, trigger: 'blur' }
+                    // ],
                     // rec2_email: [
                     //     { required: true, message: '不能为空！', trigger: 'blur' },
                     //     { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }
