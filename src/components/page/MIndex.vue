@@ -92,12 +92,28 @@
                 “功夫财经”于2015年11正式上线，由中国知名财经媒体人王牧笛创立。“功夫财经”定位于国民财商提升者，两年内迅速奠定了国内财经新媒体头部平台的地位。平台集结了马光远、王福重、时寒冰、李大霄、胡润、琢磨先生、肖锋等国内最强的经济学者天团，以及数位金融及投资领域KOL，通过音频、短视频、时评文章、财经脱口秀、付费知识内容、线下大课、游学等多种产品形态，致力服务于新中产阶层及较高净值人群，打造国内最活跃的财富社群，立足成为链接内容、社群与撮合交易一站式新型金融服务商。
               </p>
               <img class="title-center" src="../../../static/img/09.png" alt="">
-              <div class="xzjg">
-                <img class="img-1" src="../../../static/img/xz01.png" alt="">
-                <img class="img-2" src="../../../static/img/xz02.png" alt="">
-                <img class="img-3" src="../../../static/img/xz03.png" alt="">
-                <img class="img-4" src="../../../static/img/xz04.png" alt="">
-              </div>
+              <img class="img-1 title-center-3" src="../../../static/img/xz01.png" alt="">
+              <p class="ad-con">
+                春光里创投中心旗下顶级私人财富管理机构，专注于为高净值客户提供创新财富管理服务的平台。
+              </p>
+              <img class="img-2 title-center-3" src="../../../static/img/xz02.png" alt="">
+              <p class="ad-con">
+                  理亿理，是为高端客户提供资产配置的专业理财师平台，通过“智能投顾+全面的金融产品”打造线上独立理财师工作室。
+              </p>
+              <img class="img-3 title-center-3" src="../../../static/img/xz03.png" alt="">
+              <p class="ad-con">
+                财联邦是首家专注海外资产配置行业的服务商，提供海外资产配置的一站式解决方案。
+              </p>
+              <img class="img-4 title-center-3" src="../../../static/img/xz04.png" alt="">
+              <p class="ad-con">
+                财意志是中国领先的高端保险理财师专业精进、跨界融合平台，并致力于在财富管理领域充分运用互联网和智能科技。
+              </p>
+              <!-- <div class="xzjg">
+                <img class="img-1 img" src="../../../static/img/xz01.png" alt="">
+                <img class="img-2 img" src="../../../static/img/xz02.png" alt="">
+                <img class="img-3 img" src="../../../static/img/xz03.png" alt="">
+                <img class="img-4 img" src="../../../static/img/xz04.png" alt="">
+              </div> -->
             </div>
           </div>
         </div>
@@ -184,6 +200,10 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
           display: block;
           width:2rem;
         }
+        .title-center-3{
+          margin: 0px auto 0;
+          display: block;
+        }
         .ad-con{
           position: relative;
           height: auto;
@@ -236,21 +256,21 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
     justify-content: space-around;
     align-items: center;
     margin-top: .5rem;
-    img{
-      display: block;
-    }
-    .img-1{
-      width: 1rem;
-    }
-    .img-2{
-      width: .7rem;
-    }
-    .img-3{
-      width: 1rem;
-    }
-    .img-4{
-      width: 1.25rem;
-    }
+  }
+  .img{
+    display: block;
+  }
+  .img-1{
+    width: 1.5rem;
+  }
+  .img-2{
+    width: 1.05rem;
+  }
+  .img-3{
+    width: 1.5rem;
+  }
+  .img-4{
+    width: 2.875rem;
   }
   .el-collapse-item__header{
     height: auto;

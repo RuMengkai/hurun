@@ -134,7 +134,35 @@
               </p>
             </div>
           </div>
-
+          <div class="title-img-2">
+            <img src="../../../static/img/09.png" alt="">
+          </div>
+          <div class="xzf">
+            <div class="li">
+              <img class="img-1 title-center-3" src="../../../static/img/xz01.png" alt="">
+              <p class="ad-con">
+                春光里创投中心旗下顶级私人财富管理机构，专注于为高净值客户提供创新财富管理服务的平台。
+              </p>
+            </div>
+            <div class="li">
+              <img class="img-2 title-center-3" src="../../../static/img/xz02.png" alt="">
+              <p class="ad-con">
+                理亿理，是为高端客户提供资产配置的专业理财师平台，通过“智能投顾+全面的金融产品”打造线上独立理财师工作室。
+              </p>
+            </div>
+            <div class="li">
+              <img class="img-3 title-center-3" src="../../../static/img/xz03.png" alt="">
+              <p class="ad-con">
+                财联邦是首家专注海外资产配置行业的服务商，提供海外资产配置的一站式解决方案。
+              </p>
+            </div>
+            <div class="li">
+              <img class="img-4 title-center-3" src="../../../static/img/xz04.png" alt="">
+              <p class="ad-con">
+                财意志是中国领先的高端保险理财师专业精进、跨界融合平台，并致力于在财富管理领域充分运用互联网和智能科技。
+              </p>
+            </div>
+          </div>
         </div>
     </div>
 </template>
@@ -484,6 +512,37 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
           line-height: 30px;
         }
       }
+      .xzf{
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        background: #121416;
+        .li{
+          width: 160px;
+          img{
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+          }
+          .img-1{
+            width: 1.5rem;
+          }
+          .img-2{
+            width: 1.05rem;
+          }
+          .img-3{
+            width: 1.5rem;
+          }
+          .img-4{
+            width: 2.58rem;
+          }
+          p{
+            line-height: 25px;
+            font-size: 14px;
+          }
+        }
+      }
       .prize{
         .title-img;
         margin-top: 0px !important;
@@ -507,6 +566,15 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
     img{
       width: 120px;
       margin:0 auto 50px;
+      display: block;
+    }
+  }
+  .title-img-2{
+    background: @back_color;
+    padding:5px 24px;
+    img{
+      width: 150px;
+      margin:0 auto 20px;
       display: block;
     }
   }
