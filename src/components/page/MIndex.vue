@@ -108,6 +108,10 @@
               <p class="ad-con">
                 财意志是中国领先的高端保险理财师专业精进、跨界融合平台，并致力于在财富管理领域充分运用互联网和智能科技。
               </p>
+              <img class="img-4 title-center-3" src="../../../static/img/xz05.png" alt="">
+              <p class="ad-con">
+                深圳市慢钱网络科技有限公司成立于2013年，集资产管理、财富管理、金融科技于一体，是现代综合型互联网私人银行的卓越先行者。
+              </p>
               <!-- <div class="xzjg">
                 <img class="img-1 img" src="../../../static/img/xz01.png" alt="">
                 <img class="img-2 img" src="../../../static/img/xz02.png" alt="">
@@ -135,8 +139,8 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
           }
           var data={
             title:'理财师 222- 功夫财经',
-            link:'http://licaishi.kofuf.com',
-            imgUrl:'http://m.kofuf.com/static/img_h5/h5_logo.png',
+            link:'http://licaishi.hurun.com',
+            imgUrl:'http://m.51xy8.com/static/img_h5/h5_logo.png',
             desc:"胡润中国金牌理财师TOP100"
           }
           weixinShare(this.$axios,data);

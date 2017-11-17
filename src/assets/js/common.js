@@ -27,7 +27,7 @@ export function isMobile(){
 }
 export function weixinShare(axios,shareData){
   // console.log(encodeURIComponent(window.location.href.split('#')[0]))
-	var url="https://api.kofuf.com/api/session/share_weixin_config?url="+encodeURIComponent(window.location.href.split('#')[0]);
+	var url="https://api.51xy8.com/api/session/share_weixin_config?url="+encodeURIComponent(window.location.href.split('#')[0]);
 	axios.get(url)
 	.then(function (res) {
 		// var data=JSON.parse(data);
@@ -54,8 +54,8 @@ export function weixinShare(axios,shareData){
     // console.log(wx.config);
     // 分享到到朋友圈
     var title=shareData.title||"功夫财经";
-    var link=shareData.link||'https://licaishi.kofuf.com';
-    var imgUrl=shareData.imgUrl||'https://m.kofuf.com/static/img_h5/h5_logo.png';
+    var link=shareData.link||'https://licaishi.hurun.com';
+    var imgUrl=shareData.imgUrl||'https://m.51xy8.com/static/img_h5/h5_logo.png';
     var desc=shareData.desc;
     wx.onMenuShareTimeline({
       title: title, // 分享标题

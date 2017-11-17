@@ -128,7 +128,7 @@
               </p>
             </div>
             <div class="o-right">
-              <a href="https://www.kofuf.com" target="_blank"><img class="img" src="../../../static/img/logo_kofuf.png" alt=""></a>
+              <a href="https://www.51xy8.com" target="_blank"><img class="img" src="../../../static/img/logo_kofuf.png" alt=""></a>
               <p class="o-con">
                 “功夫财经”于2015年11正式上线，由中国知名财经媒体人王牧笛创立。“功夫财经”定位于国民财商提升者，两年内迅速奠定了国内财经新媒体头部平台的地位。平台集结了马光远、王福重、时寒冰、李大霄、胡润、琢磨先生、肖锋等国内最强的经济学者天团， 以及数位金融及投资领域KOL，通过音频、短视频、时评文章、财经脱口秀、付费知识内容、线下大课、游学等多种产品形态，致力服务于新中产阶层及较高净值人群，打造国内最活跃的财富社群，立足成为链接内容、社群与撮合交易一站式新型金融服务商。
               </p>
@@ -160,6 +160,14 @@
               <img class="img-4 title-center-3" src="../../../static/img/xz04.png" alt="">
               <p class="ad-con">
                 财意志是中国领先的高端保险理财师专业精进、跨界融合平台，并致力于在财富管理领域充分运用互联网和智能科技。
+              </p>
+            </div>
+          </div>
+          <div class="xzf">
+            <div class="li">
+              <img class="img-5 title-center-3" src="../../../static/img/xz05.png" alt="">
+              <p class="ad-con">
+                深圳市慢钱网络科技有限公司成立于2013年，集资产管理、财富管理、金融科技于一体，是现代综合型互联网私人银行的卓越先行者。
               </p>
             </div>
           </div>
@@ -513,11 +521,10 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
         }
       }
       .xzf{
-        margin-bottom: 30px;
-        padding-bottom: 20px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         background: #121416;
+        padding: 0 25px 50px;
         .li{
           width: 160px;
           img{
@@ -535,6 +542,9 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
             width: 1.5rem;
           }
           .img-4{
+            width: 2.58rem;
+          }
+          .img-5{
             width: 2.58rem;
           }
           p{
