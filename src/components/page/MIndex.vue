@@ -130,7 +130,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
     export default {
         data: function(){
             return {
-              channel:this.$route.query.channel
+              channel:this.$route.query.channel||"kofuf"
             }
         },
         mounted () {

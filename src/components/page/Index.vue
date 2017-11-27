@@ -180,7 +180,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
     export default {
         data: function(){
             return {
-                channel:this.$route.query.channel,
+                channel:this.$route.query.channel||"kofuf",
                 ruleForm: {
                     username: '',
                     password: ''
@@ -188,7 +188,6 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
             }
         },
         mounted () {
-          console.log(this.$route.query.channel);
           if (isMobile()) {
             this.$router.push('/m-index/?channel='+this.$route.query.channel);
           }
