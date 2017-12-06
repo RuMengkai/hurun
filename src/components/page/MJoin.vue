@@ -285,7 +285,7 @@
                     // rec2_phone: '',
                     // rec2_email: '',
                     // rec2_intro: '',
-                    channel:this.$route.query.channel||"kofuf"
+                    channel:(this.$route.query.channel==''||this.$route.query.channel=='undefined'||!this.$route.query.channel)?"kofuf":this.$route.query.channel
                 },
                 rules: {
                     age: [
