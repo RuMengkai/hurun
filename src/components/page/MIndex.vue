@@ -27,17 +27,25 @@
                 <template slot="title">
                   <span class="cle-1"></span>
                   <p class="p-title">全国报名阶段</p>
-                  <p class="p-date">2017年10月30日-2017年11月30日</p>
+                  <p class="p-date">2017年10月31日-2017年12月31日</p>
                 </template>
                 <div>·	网络报名——理财师通过本次活动指定报名渠道填写报名资料。</div>
                 <div>·	本次评审长老团推荐精英理财师——每位长老团成员推荐精英理财师不超过5位。</div>
                 <div>·	确认候选理财师名单，评审长老团根据真实报名资料，综合选拔约1000名选手进入复赛。主办方于2017年12月1日前公布筛选结果，并通知入围理财师参与下一轮比赛。</div>
               </el-collapse-item>
+							 <el-collapse-item>
+                <template slot="title">
+                  <span class="cle-2"></span>
+                  <p class="p-title">初选阶段</p>
+                  <p class="p-date">2018年1月1日-2018年1月15日</p>
+                </template>
+                <div>·	初选阶段。</div>
+              </el-collapse-item>
               <el-collapse-item>
                 <template slot="title">
                   <span class="cle-2"></span>
                   <p class="p-title">复赛阶段</p>
-                  <p class="p-date">2017年12月1日-2017年12月22日</p>
+                  <p class="p-date">2018年1月15日-2018年2月15日</p>
                 </template>
                 <div>·	对进入复赛理财师进行报名材料真实性调查，若与事实不符，将取消参赛资格。</div>
                 <div>·	同时评审长老团将从候选理财师的专业性、技能、职业素质、资格职称、从业年限、学历、荣誉、服务质量、同行口碑等角度进行综合打分，根据最终得分选拔出前200位精英理财师进入总决赛。</div>
@@ -46,16 +54,24 @@
                 <template slot="title">
                   <span class="cle-3"></span>
                   <p class="p-title">全国终审</p>
-                  <p class="p-date">2017年12月25日-2018年1月5日</p>
+                  <p class="p-date">2018年2月16日-2018年3月1日</p>
                 </template>
                 <div>·	活动主动方同时会通过调研，全面、深入了解中国理财师行业发展现状、特点及趋势，通过理财者、行业权威专家和相关研究院深度访谈调研，制定一份帮助理财者快速甄选优秀理财师的指南手册。</div>
                 <div>·	最终根据优秀理财师的指南手册、理财者报名材料、评审长老团评议结果，遴选出2017《胡润中国金牌理财师TOP100》榜单，并通过最大限度的媒体曝光，为行业树立标杆和增强行业影响力。</div>
+              </el-collapse-item>
+							<el-collapse-item >
+                <template slot="title">
+                  <span class="cle-4"></span>
+                  <p class="p-title">白皮书发布</p>
+                  <p class="p-date">2018年3月6日</p>
+                </template>
+                <div>·	胡润·金牌理财师榜单及白皮书发布</div>
               </el-collapse-item>
               <el-collapse-item >
                 <template slot="title">
                   <span class="cle-4"></span>
                   <p class="p-title">TOP100理财师颁奖礼</p>
-                  <p class="p-date">2018年1月24日</p>
+                  <p class="p-date">2018年3月28日</p>
                 </template>
                 <div>·	2017《中国理财师特别报告》发布会</div>
                 <div>·	2017《胡润金牌理财师TOP100》发布会</div>

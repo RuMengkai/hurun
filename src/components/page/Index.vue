@@ -42,19 +42,28 @@
                 <span class="cle c-2"></span>
                 <span class="cle c-3"></span>
                 <span class="cle c-4"></span>
+                <span class="cle c-5"></span>
+                <span class="cle c-6"></span>
               </div>
               <div class="baoming">
                 <p class="p-1"> 全国报名阶段 </p>
-                <p class="p-2"> 2017年10月30日-2017年11月30日 </p>
+                <p class="p-2"> 2017年10月31日-2017年12月31日 </p>
                 <div class="baoming-fl fl">
                   <div>·	网络报名——理财师通过本次活动指定报名渠道填写报名资料。</div>
                   <div>·	本次评审长老团推荐精英理财师——每位长老团成员推荐精英理财师不超过5位。</div>
                   <div>·	确认候选理财师名单，评审长老团根据真实报名资料，综合选拔约1000名选手进入复赛。主办方于2017年12月1日前公布筛选结果，并通知入围理财师参与下一轮比赛。</div>
                 </div>
               </div>
+							<div class="chuxuan">
+                <p class="p-1"> 初选阶段 </p>
+                <p class="p-2"> 2018年1月1日-2018年1月15日 </p>
+                <div class="chuxuan-fl fl">
+                  <div>·	初选阶段。</div>
+                </div>
+              </div>
               <div class="fusai">
                 <p class="p-1"> 复赛阶段 </p>
-                <p class="p-2"> 2017年12月1日-2017年12月22日 </p>
+                <p class="p-2"> 2018年1月15日-2018年2月15日 </p>
                 <div class="fusai-fl fl">
                   <div>·	对进入复赛理财师进行报名材料真实性调查，若与事实不符，将取消参赛资格。</div>
                   <div>·	同时评审长老团将从候选理财师的专业性、技能、职业素质、资格职称、从业年限、学历、荣誉、服务质量、同行口碑等角度进行综合打分，根据最终得分选拔出前200位精英理财师进入总决赛。</div>
@@ -62,15 +71,22 @@
               </div>
               <div class="zhongshen">
                 <p class="p-1"> 全国终审 </p>
-                <p class="p-2"> 2017年12月25日-2018年1月5日 </p>
+                <p class="p-2"> 2018年2月16日-2018年3月1日 </p>
                 <div class="zhongshen-fl fl">
                   <div>·	活动主动方同时会通过调研，全面、深入了解中国理财师行业发展现状、特点及趋势，通过理财者、行业权威专家和相关研究院深度访谈调研，制定一份帮助理财者快速甄选优秀理财师的指南手册。</div>
                   <div>·	最终根据优秀理财师的指南手册、理财者报名材料、评审长老团评议结果，遴选出2017《胡润中国金牌理财师TOP100》榜单，并通过最大限度的媒体曝光，为行业树立标杆和增强行业影响力。</div>
                 </div>
               </div>
-              <div class="banjiang">
+              <div class="fabu">
+                <p class="p-1"> 白皮书发布 </p>
+                <p class="p-2"> 2018年3月6日 </p>
+                <div class="fabu-fl fl">
+                  <div>·	胡润·金牌理财师榜单及白皮书发布</div>
+                </div>
+              </div>
+							<div class="banjiang">
                 <p class="p-1"> TOP100理财师颁奖典礼 </p>
-                <p class="p-2"> 2018年1月24日 </p>
+                <p class="p-2"> 2018年3月28日 </p>
                 <div class="banjiang-fl fl">
                   <div>·	2017《中国理财师特别报告》发布会</div>
                   <div>·	2017《胡润金牌理财师TOP100》发布会</div>
@@ -284,11 +300,11 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
         }
         .box-liucheng{
           position: relative;
-          height:520px;
+          height:820px;
           .line{
             position: relative;
             margin:43px auto;
-            height:434px;
+            height:662px;
             width:1px;
             background: @font_color;
             padding-top: 1px;
@@ -313,6 +329,12 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
             }
             .c-4{
               margin-top: 428px;
+						}
+						.c-5{
+              margin-top: 572px;
+						}
+						.c-6{
+              margin-top: 658px;
             }
           }
           .p-1{
@@ -340,13 +362,29 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
           .baoming-fl{
             left: 389px;
             top: 0;
-          }
-          .fusai{
+					}
+					.chuxuan{
             position: absolute;
             width: 345px;
             top: 138px;
             right: 0;
             text-align: left;
+            cursor: pointer;
+            &:hover{
+              .chuxuan-fl{
+                display: block;
+              }
+            }
+          }
+          .chuxuan-fl{
+            left: -389px;
+            top: 0;
+          }
+          .fusai{
+            position: absolute;
+            width: 345px;
+            top: 275px;
+            text-align: right;
             cursor: pointer;
             &:hover{
               .fusai-fl{
@@ -355,14 +393,15 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
             }
           }
           .fusai-fl{
-            left: -389px;
+            left: 389px;
             top: 0;
-          }
-          .zhongshen{
+					}
+					.zhongshen{
             position: absolute;
             width: 345px;
-            top: 275px;
-            text-align: right;
+            top: 430px;
+            right: 0;
+            text-align: left;
             cursor: pointer;
             &:hover{
               .zhongshen-fl{
@@ -371,13 +410,29 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
             }
           }
           .zhongshen-fl{
-            left: 389px;
+            left: -389px;
             top: 0;
-          }
-          .banjiang{
+					}
+					.fabu{
             position: absolute;
             width: 345px;
-            top: 430px;
+            top: 565px;
+            text-align: right;
+            cursor: pointer;
+            &:hover{
+              .fabu-fl{
+                display: block;
+              }
+            }
+          }
+          .fabu-fl{
+            left: 389px;
+            top: 0;
+					}
+					.banjiang{
+            position: absolute;
+            width: 345px;
+            top: 650px;
             right: 0;
             text-align: left;
             cursor: pointer;
@@ -390,7 +445,24 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
           .banjiang-fl{
             left: -389px;
             top: 0;
-          }
+					}
+          // .banjiang{
+          //   position: absolute;
+          //   width: 345px;
+          //   top: 430px;
+          //   right: 0;
+          //   text-align: left;
+          //   cursor: pointer;
+          //   &:hover{
+          //     .banjiang-fl{
+          //       display: block;
+          //     }
+          //   }
+          // }
+          // .banjiang-fl{
+          //   left: -389px;
+          //   top: 0;
+          // }
           .fl{
             font-size: 14px;
             line-height: 24px;
