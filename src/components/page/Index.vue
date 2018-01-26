@@ -32,6 +32,9 @@
 					<div id="jdjxc">
 						<div id="imgRolling">
 							<ul class="imagebg" id="imagebg">
+								<li data-sPic="https://static1.kofuf.com/1516938269960.jpeg" data-text="评审长老团：理财新时代来了！">
+									<video controls name="media" poster="https://static1.kofuf.com/1516938269960.jpeg" src="https://video.kofuf.com/1516937881390.mp4"></video>
+								</li>
 								<li data-sPic="https://static1.kofuf.com/1516704309050.jpeg" data-text="李清昊：为什么越来越多的人把赚的钱给他管？">
 									<video controls name="media" poster="https://static1.kofuf.com/1516704309050.jpeg" src="https://video.kofuf.com/1516766333847.mp4"></video>
 								</li>
@@ -104,17 +107,27 @@
 							<div>· 最终根据优秀理财师的指南手册、理财者报名材料、评审长老团评议结果，遴选出2017《胡润中国金牌理财师TOP100》榜单，并通过最大限度的媒体曝光，为行业树立标杆和增强行业影响力。</div>
 						</div>
 					</div>
-					<div class="fabu">
+					<!-- <div class="fabu">
 						<p class="p-1"> 白皮书发布 </p>
 						<p class="p-2"> 2018年3月6日 </p>
 						<div class="fabu-fl fl">
 							<div>· 胡润·金牌理财师榜单及白皮书发布</div>
 						</div>
-					</div>
-					<div class="banjiang">
+					</div> -->
+					<!-- <div class="banjiang">
 						<p class="p-1"> TOP100理财师颁奖典礼 </p>
-						<p class="p-2"> 2018年3月28日 </p>
+						<p class="p-2"> 2018年3月21日 </p>
 						<div class="banjiang-fl fl">
+							<div>· 胡润·金牌理财师榜单及白皮书发布</div>
+							<div>· 2017《中国理财师特别报告》发布会</div>
+							<div>· 2017《胡润金牌理财师TOP100》发布会</div>
+						</div>
+					</div> -->
+					<div class="fabu">
+						<p class="p-1"> TOP100理财师颁奖典礼 </p>
+						<p class="p-2"> 2018年3月21日 </p>
+						<div class="fabu-fl fl">
+							<div>· 胡润·金牌理财师榜单及白皮书发布</div>
 							<div>· 2017《中国理财师特别报告》发布会</div>
 							<div>· 2017《胡润金牌理财师TOP100》发布会</div>
 						</div>
@@ -331,11 +344,11 @@
 				}
 				.box-liucheng {
 					position: relative;
-					height: 820px;
+					height: 720px;
 					.line {
 						position: relative;
 						margin: 43px auto;
-						height: 662px;
+						height: 586px;
 						width: 1px;
 						background: @font_color;
 						padding-top: 1px;
@@ -364,9 +377,9 @@
 						.c-5 {
 							margin-top: 572px;
 						}
-						.c-6 {
-							margin-top: 658px;
-						}
+						// .c-6 {
+						// 	margin-top: 658px;
+						// }
 					}
 					.p-1 {
 						color: @font_color;

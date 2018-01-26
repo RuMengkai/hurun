@@ -1,5 +1,5 @@
 <template>
-    <div class="index-wrap">
+    <div class="index-wrap-m">
         <div class="bg"></div>
         <div class="mk-content">
           <div class="banner">
@@ -13,10 +13,31 @@
 2017年第一届“胡润中国金牌理财师TOP100甄选”于10月正式启动，本次评选活动在寻找中国最专业理财师的同时，也致力于为金融、投资、理财等行业建立健康、有序的行业发展规范和荣誉体系，并期望在帮助社会公众洞悉全球金融市场、了解风险管理和资产配置的过程中，使他们丰富自我、积累财富，完成由富及贵的转变。
               </p>
               <img class="title-center" src="../../../static/img/02.png" alt="">
-              <p class="ad-con">
+							<div class="video-box">
+								<video controls ref="videoRef" name="media" poster="https://static1.kofuf.com/1516938269960.jpeg" src="https://video.kofuf.com/1516937881390.mp4"></video>
+								<ul>
+									<li @click="selectVideo('https://video.kofuf.com/1516937881390.mp4','https://static1.kofuf.com/1516938269960.jpeg')">
+										<img src="https://static1.kofuf.com/1516938269960.jpeg" alt="">
+										<p>评审长老团：理财新时代来了！</p>
+									</li>
+									<li @click="selectVideo('https://video.kofuf.com/1516766333847.mp4','https://static1.kofuf.com/1516704309050.jpeg')">
+										<img src="https://static1.kofuf.com/1516704309050.jpeg" alt="">
+										<p>李清昊：为什么越来越多的人把赚的钱给他管？</p>
+									</li>
+									<li @click="selectVideo('https://video.kofuf.com/1516766419723.mp4','https://static2.kofuf.com/1516774364284.jpeg')">
+										<img src="https://static2.kofuf.com/1516774364284.jpeg" alt="">
+										<p>李清昊：想要成为优秀的理财师，这些“技能”都要点满</p>
+									</li>
+									<li @click="selectVideo('https://video.kofuf.com/1516767116314.mp4','https://static1.kofuf.com/1516774372372.jpeg')">
+										<img src="https://static1.kofuf.com/1516774372372.jpeg" alt="">
+										<p>黄凡：在100万亿理财市场的公路上，我是拉风的拖拉机手</p>
+									</li>
+								</ul>
+							</div>
+              <!-- <p class="ad-con">
                 凡持有CFP、AFP资格认证、理财规划师或相关资格认证，符合国家相关理财从业资格标准的专业理财师，无地域限制，均可报名参加；<br>
                 本次评选活动面向银行、保险、证券、基金、投资、信托、第三理财、综合理财等机构的理财精英。
-              </p>
+              </p> -->
               <img class="title-center plus" src="../../../static/img/03.png" alt="">
               <p class="ad-con">
                 本着公平、公正、透明、权威的原则，2017《胡润中国金牌理财师TOP100》共设置了全国报名、复赛、全国终审和暨颁奖礼四个环节。
@@ -58,20 +79,20 @@
                 <div>·	活动主动方同时会通过调研，全面、深入了解中国理财师行业发展现状、特点及趋势，通过理财者、行业权威专家和相关研究院深度访谈调研，制定一份帮助理财者快速甄选优秀理财师的指南手册。</div>
                 <div>·	最终根据优秀理财师的指南手册、理财者报名材料、评审长老团评议结果，遴选出2017《胡润中国金牌理财师TOP100》榜单，并通过最大限度的媒体曝光，为行业树立标杆和增强行业影响力。</div>
               </el-collapse-item>
-							<el-collapse-item >
+							<!-- <el-collapse-item >
                 <template slot="title">
                   <span class="cle-4"></span>
                   <p class="p-title">白皮书发布</p>
                   <p class="p-date">2018年3月6日</p>
                 </template>
-                <div>·	胡润·金牌理财师榜单及白皮书发布</div>
-              </el-collapse-item>
+              </el-collapse-item> -->
               <el-collapse-item >
                 <template slot="title">
                   <span class="cle-4"></span>
                   <p class="p-title">TOP100理财师颁奖礼</p>
-                  <p class="p-date">2018年3月28日</p>
+                  <p class="p-date">2018年3月21日</p>
                 </template>
+                <div>·	胡润·金牌理财师榜单及白皮书发布</div>
                 <div>·	2017《中国理财师特别报告》发布会</div>
                 <div>·	2017《胡润金牌理财师TOP100》发布会</div>
               </el-collapse-item>
@@ -136,7 +157,7 @@
             </div>
           </div>
         </div>
-        <router-link class="m-active-btn" :to="{ path: '/m-join',query: { channel: channel }}">立即报名</router-link>
+        <!-- <router-link class="m-active-btn" :to="{ path: '/m-join',query: { channel: channel }}">立即报名</router-link> -->
     </div>
 </template>
 
@@ -161,6 +182,11 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
           weixinShare(this.$axios,data);
         },
         methods: {
+					selectVideo(video,img){
+						let videoDom = this.$refs.videoRef
+						videoDom.src = video
+						videoDom.poster = img
+					}
         }
     }
 </script>
@@ -168,7 +194,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
 <style lang="less">
   @back_color:#1b1d1f;
   @font_color:#ebbc6c;
-  .index-wrap{
+  .index-wrap-m{
     width: 100%;
     color: #fff;
     background: #000;
@@ -209,7 +235,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
         .title-center{
           margin: auto;
           display: block;
-          width:2.4rem;
+          width: 4.4rem;
         }
         .title-center.plus{
           width: 4.3rem;
@@ -244,7 +270,39 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
       background: url(../../../static/img/m-bg.jpg);
       background-size: 100% 100%;
       position: fixed;
-    }
+		}
+		.video-box{
+			video{
+				height: 4.2rem;
+				width: 100%;
+				display: block;
+				margin: 20px 0;
+				box-sizing: border-box;
+				padding: 0 10px;
+			}
+			ul{
+				margin: 0 0 40px;
+				li{
+					height: 80px;
+					padding: 8px 10px;
+					box-sizing: border-box;
+					img{
+						width: 118px;
+						height: 69px;
+						display: block;
+						overflow: hidden;
+						float: left;
+						opacity: 0.8;
+					}
+					p{
+						margin-left: 130px;
+						line-height: 28px;
+						font-size: 14px;
+						color: #fff;
+					}
+				}
+			}
+		}
   }
   .title-img{
     background: @back_color;
