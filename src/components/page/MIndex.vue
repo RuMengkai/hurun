@@ -32,6 +32,14 @@
 										<img src="https://static1.kofuf.com/1516774372372.jpeg" alt="">
 										<p>黄凡：在100万亿理财市场的公路上，我是拉风的拖拉机手</p>
 									</li>
+									<li @click="selectVideo('https://video.kofuf.com/1518078087505.mp4','https://static1.kofuf.com/1518077868646.jpeg')">
+										<img src="https://static1.kofuf.com/1518077868646.jpeg" alt="">
+										<p>黄凡：银行或将打破刚性兑付，资产配置需要记住这三点</p>
+									</li>
+									<li @click="selectVideo('http://video.kofuf.com/1518082803068.mp4','https://static1.kofuf.com/1518077916031.jpeg')">
+										<img src="https://static1.kofuf.com/1518077916031.jpeg" alt="">
+										<p>姚伟示：投资机构那么多，理财需求升级了，心态怎么升级？</p>
+									</li>
 								</ul>
 							</div>
               <!-- <p class="ad-con">
@@ -296,7 +304,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
 					}
 					p{
 						margin-left: 130px;
-						line-height: 28px;
+						line-height: 24px;
 						font-size: 14px;
 						color: #fff;
 					}

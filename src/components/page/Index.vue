@@ -44,6 +44,12 @@
 								<li data-sPic="https://static1.kofuf.com/1516774372372.jpeg" data-text="黄凡：在100万亿理财市场的公路上，我是拉风的拖拉机手">
 									<video controls name="media" poster="https://static1.kofuf.com/1516774372372.jpeg" src="https://video.kofuf.com/1516767116314.mp4"></video>
 								</li>
+								<li data-sPic="https://static1.kofuf.com/1518077868646.jpeg" data-text="黄凡：银行或将打破刚性兑付，资产配置需要记住这三点">
+									<video controls name="media" poster="https://static1.kofuf.com/1518077868646.jpeg" src="https://video.kofuf.com/1518078087505.mp4"></video>
+								</li>
+								<li data-sPic="https://static1.kofuf.com/1518077916031.jpeg" data-text="姚伟示：投资机构那么多，理财需求升级了，心态怎么升级？">
+									<video controls name="media" poster="https://static1.kofuf.com/1518077916031.jpeg" src="http://video.kofuf.com/1518082803068.mp4"></video>
+								</li>
 							</ul>
 							<div class="scrollbg">
 								<div class="scroll">
