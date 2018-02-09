@@ -18,7 +18,11 @@ export default new Router({
         {
             path: '/join',
             component: resolve => require(['../components/page/Join.vue'], resolve)
-        },
+				},
+				{
+					path: '/win-list',
+					component: resolve => require(['../components/page/WinList.vue'], resolve)
+				},
         {
             path: '/m-index',
             component: resolve => require(['../components/page/MIndex.vue'], resolve)
@@ -30,7 +34,11 @@ export default new Router({
         {
             path: '/protocol',
             component: resolve => require(['../components/page/Protocol.vue'], resolve)
-        },
+				},
+				{
+					path: '/m-win-list',
+					component: resolve => require(['../components/page/MWinList.vue'], resolve)
+				},
         // {
         //     path: '/*',
         //     component: resolve => require(['../components/page/Index.vue'], resolve)

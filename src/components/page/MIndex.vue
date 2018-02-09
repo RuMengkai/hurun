@@ -12,7 +12,7 @@
                 基于全球政治环境的风云变化、财富起落的瞬息万变，胡润百富携手业内领先机构——美信全球、功夫财经，旨在于瞬息万变的大环境中寻找中国最优秀的“点金胜手”。
 2017年第一届“胡润中国金牌理财师TOP100甄选”于10月正式启动，本次评选活动在寻找中国最专业理财师的同时，也致力于为金融、投资、理财等行业建立健康、有序的行业发展规范和荣誉体系，并期望在帮助社会公众洞悉全球金融市场、了解风险管理和资产配置的过程中，使他们丰富自我、积累财富，完成由富及贵的转变。
               </p>
-              <img class="title-center" src="../../../static/img/02.png" alt="">
+              <img class="title-center-33" src="../../../static/img/02.png" alt="">
 							<div class="video-box">
 								<video controls ref="videoRef" name="media" poster="https://static1.kofuf.com/1516938269960.jpeg" src="https://video.kofuf.com/1516937881390.mp4"></video>
 								<ul>
@@ -165,7 +165,7 @@
             </div>
           </div>
         </div>
-        <!-- <router-link class="m-active-btn" :to="{ path: '/m-join',query: { channel: channel }}">立即报名</router-link> -->
+        <router-link class="m-active-btn" :to="{ path: '/m-win-list',query: { channel: channel }}">金牌理财师复赛入选名单</router-link>
     </div>
 </template>
 
@@ -241,6 +241,11 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
           margin-top: 20px;
         }
         .title-center{
+          margin: auto;
+          display: block;
+          width: 2.4rem;
+				}
+				.title-center-33{
           margin: auto;
           display: block;
           width: 4.4rem;

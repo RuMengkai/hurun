@@ -95,7 +95,7 @@
 						</div>
 					</div>
 					<div class="btn_list">
-						<!-- <router-link class="list-btn" :to="{ path: '/join',query: { channel: channel }}"></router-link> -->
+						<router-link class="list-btn" :to="{ path: '/win-list',query: { channel: channel }}"></router-link>
 					</div>
 					<div class="fusai">
 						<p class="p-1"> 复赛阶段 </p>
