@@ -40,6 +40,10 @@
 										<img src="https://static1.kofuf.com/1518077916031.jpeg" alt="">
 										<p>姚伟示：投资机构那么多，理财需求升级了，心态怎么升级？</p>
 									</li>
+									<li @click="selectVideo('http://video.kofuf.com/1518341943715.mp4','http://static0.kofuf.com/1518342843489.png')">
+										<img src="http://static0.kofuf.com/1518342843489.png" alt="">
+										<p>姚伟示：要理财，这些坑你别跳！</p>
+									</li>
 								</ul>
 							</div>
               <!-- <p class="ad-con">
@@ -101,8 +105,8 @@
                   <p class="p-date">2018年3月21日</p>
                 </template>
                 <div>·	胡润·金牌理财师榜单及白皮书发布</div>
-                <div>·	2017《中国理财师特别报告》发布会</div>
-                <div>·	2017《胡润金牌理财师TOP100》发布会</div>
+                <div>·	2018《中国理财师特别报告》发布会</div>
+                <div>·	2018《胡润金牌理财师TOP100》发布会</div>
               </el-collapse-item>
             </el-collapse>
             <!-- <div class="ad-bg-2">

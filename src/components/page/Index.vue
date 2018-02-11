@@ -50,6 +50,9 @@
 								<li data-sPic="https://static1.kofuf.com/1518077916031.jpeg" data-text="姚伟示：投资机构那么多，理财需求升级了，心态怎么升级？">
 									<video controls name="media" poster="https://static1.kofuf.com/1518077916031.jpeg" src="http://video.kofuf.com/1518082803068.mp4"></video>
 								</li>
+								<li data-sPic="http://static0.kofuf.com/1518342843489.png" data-text="姚伟示：要理财，这些坑你别跳！">
+									<video controls name="media" poster="http://static0.kofuf.com/1518342843489.png" src="http://video.kofuf.com/1518341943715.mp4"></video>
+								</li>
 							</ul>
 							<div class="scrollbg">
 								<div class="scroll">
@@ -134,8 +137,8 @@
 						<p class="p-2"> 2018年3月21日 </p>
 						<div class="fabu-fl fl">
 							<div>· 胡润·金牌理财师榜单及白皮书发布</div>
-							<div>· 2017《中国理财师特别报告》发布会</div>
-							<div>· 2017《胡润金牌理财师TOP100》发布会</div>
+							<div>· 2018《中国理财师特别报告》发布会</div>
+							<div>· 2018《胡润金牌理财师TOP100》发布会</div>
 						</div>
 					</div>
 				</div>
