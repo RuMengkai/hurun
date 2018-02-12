@@ -40,7 +40,7 @@
 										<img src="https://static1.kofuf.com/1518077916031.jpeg" alt="">
 										<p>姚伟示：投资机构那么多，理财需求升级了，心态怎么升级？</p>
 									</li>
-									<li @click="selectVideo('http://video.kofuf.com/1518341943715.mp4','http://static0.kofuf.com/1518342843489.png')">
+									<li @click="selectVideo('http://video.kofuf.com/1518341943715.WebM','http://static0.kofuf.com/1518342843489.png')">
 										<img src="http://static0.kofuf.com/1518342843489.png" alt="">
 										<p>姚伟示：要理财，这些坑你别跳！</p>
 									</li>

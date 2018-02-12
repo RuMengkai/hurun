@@ -51,7 +51,7 @@
 									<video controls name="media" poster="https://static1.kofuf.com/1518077916031.jpeg" src="http://video.kofuf.com/1518082803068.mp4"></video>
 								</li>
 								<li data-sPic="http://static0.kofuf.com/1518342843489.png" data-text="姚伟示：要理财，这些坑你别跳！">
-									<video controls name="media" poster="http://static0.kofuf.com/1518342843489.png" src="http://video.kofuf.com/1518341943715.mp4"></video>
+									<video controls name="media" poster="http://static0.kofuf.com/1518342843489.png" src="http://video.kofuf.com/1518341943715.WebM"></video>
 								</li>
 							</ul>
 							<div class="scrollbg">
