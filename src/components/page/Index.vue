@@ -134,11 +134,10 @@
 					</div> -->
 					<div class="fabu">
 						<p class="p-1"> TOP100理财师颁奖典礼 </p>
-						<p class="p-2"> 2018年3月21日 </p>
+						<p class="p-2"> 2018年4月12日 </p>
 						<div class="fabu-fl fl">
-							<div>· 胡润·金牌理财师榜单及白皮书发布</div>
-							<div>· 2018《中国理财师特别报告》发布会</div>
-							<div>· 2018《胡润金牌理财师TOP100》发布会</div>
+							<div>· 胡润金牌理财规划师TOP100榜单公布</div>
+							<div>· 中国理财师白皮书发布会暨颁奖典礼</div>
 						</div>
 					</div>
 				</div>

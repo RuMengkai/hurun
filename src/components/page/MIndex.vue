@@ -102,11 +102,10 @@
                 <template slot="title">
                   <span class="cle-4"></span>
                   <p class="p-title">TOP100理财师颁奖礼</p>
-                  <p class="p-date">2018年3月21日</p>
+                  <p class="p-date">2018年4月12日</p>
                 </template>
-                <div>·	胡润·金牌理财师榜单及白皮书发布</div>
-                <div>·	2018《中国理财师特别报告》发布会</div>
-                <div>·	2018《胡润金牌理财师TOP100》发布会</div>
+                <div>·	胡润金牌理财规划师TOP100榜单公布</div>
+                <div>·	中国理财师白皮书发布会暨颁奖典礼</div>
               </el-collapse-item>
             </el-collapse>
             <!-- <div class="ad-bg-2">
