@@ -91,6 +91,7 @@
       box-sizing: border-box;
       // height: auto;
       .banner{
+				left: .66rem;
         img{
           width: 100%;
           overflow: hidden;
@@ -167,7 +168,7 @@
 		width: 100%;
 		display: block;
 		position: relative;
-		
+		left: 0.66rem;
 	}
 	.index-wrap{
 		img{
