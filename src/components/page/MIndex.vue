@@ -3,8 +3,52 @@
         <div class="bg"></div>
         <div class="mk-content">
           <div class="banner">
-            <img src="../../../static/img/m-banner.png" alt="">
+            <!-- <img src="../../../static/img/m-banner.png" alt=""> -->
           </div>
+					<div class="active-one">
+						<img class="title-center" src="../../../static/img/12.png" alt="">
+						<div class="ad-con">
+							<table>
+								<tr>
+									<td width="60">日期：</td>
+									<td>2018年4月12日（星期四）</td>
+								</tr>
+								<tr>
+									<td valign="top">
+										<p>时间：</p>	
+									</td>
+									<td>
+											<p>
+												4:00-14:30 发布会签到；
+											</p>
+											<p>
+												14:30-15:00 主办方致辞；
+											</p>
+											<p>
+												15:00-15:30 胡润发布《中国理财师白皮书》；
+											</p>
+											<p>
+												15:30-16:15 圆桌论坛； 
+											</p>
+											<p>
+												16:15-16:45 理财师颁奖；
+											</p>
+											<p>
+												16:45-17:00 媒体Q&A
+											</p>
+									</td>
+								</tr>
+								<tr>
+									<td>地点：</td>
+									<td>上海浦东丽丝卡尔顿</td>
+								</tr>
+								<tr>
+									<td>地址：</td>
+									<td>上海浦东陆家嘴世纪大道8号上海国金中心</td>
+								</tr>
+							</table>
+						</div>
+					</div>
           <div class="active-detail">
             <div class="ad-bg">
               <img class="title-center" src="../../../static/img/01.png" alt="">
@@ -218,6 +262,11 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
       overflow: hidden;
       height: auto;
       .banner{
+				background: url(../../../static/img/m-banner.png);
+				background-size: 100%;
+				background-position: 0 -476px;
+				height: 50px;
+				width: 100%;
         img{
           width: 100%;
           overflow: hidden;
@@ -418,5 +467,24 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
   }
   .el-collapse-item__content{
     color: #ddd;
-  }
+	}
+	.active-one {
+		// background: @back_color;
+		margin: .3rem .3rem 0;
+		padding: 35px 24px;
+		.title-center {
+			display: block;
+			width: 280px;
+			margin: auto;
+		}
+		.ad-con {
+			color: #fff;
+			margin-top: 40px;
+			line-height: 30px;
+			font-size: 15px;
+			table{
+				margin: auto;
+			}
+		}
+	}
 </style>
