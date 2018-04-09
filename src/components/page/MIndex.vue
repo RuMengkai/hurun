@@ -212,7 +212,8 @@
             </div>
           </div>
         </div>
-        <router-link class="m-active-btn" :to="{ path: '/m-win-list',query: { channel: channel }}">金牌理财师复赛入选名单</router-link>
+        <!-- <router-link class="m-active-btn" :to="{ path: '/m-win-list',query: { channel: channel }}">金牌理财师复赛入选名单</router-link> -->
+        <router-link class="m-active-btn" :to="{ path: '/m-win-list',query: { channel: channel }}">现场直播即将开始</router-link>
     </div>
 </template>
 
@@ -262,11 +263,12 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
       overflow: hidden;
       height: auto;
       .banner{
-				background: url(../../../static/img/m-banner.png);
-				background-size: 100%;
+				background: url(../../../static/img/m-banner.png) no-repeat;
+				background-size: 375px;
 				background-position: 0 -476px;
 				height: 50px;
-				width: 100%;
+				width: 375px;
+				margin: auto;
         img{
           width: 100%;
           overflow: hidden;
