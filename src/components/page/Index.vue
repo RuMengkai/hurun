@@ -243,7 +243,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="title-img-2">
+			<!-- <div class="title-img-2">
 				<img src="../../../static/img/09.png" alt="">
 			</div>
 			<div class="xzf">
@@ -271,7 +271,7 @@
 						财意志是中国领先的高端保险理财师专业精进、跨界融合平台，并致力于在财富管理领域充分运用互联网和智能科技。
 					</p>
 				</div>
-			</div>
+			</div> -->
 			<div class="xzf">
 				<div class="li">
 					<img class="img-5 title-center-3" src="../../../static/img/xz05.png" alt="">
