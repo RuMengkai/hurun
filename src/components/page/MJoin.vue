@@ -107,7 +107,7 @@
                 <p class="name">资格评级证书<span style="font-size:12px;color:#ccc;">（点击添加图片，且不超过10M）</span></p>
                 <el-upload
                   class="upload-img"
-                  action="http://aapi.kofuf.comm/api/upload/normal"
+                  action="http://api.kofuf.com/api/upload/normal"
                   :headers="{token:'751fc99cd6ca42ddba3e31ead852df32'}"
                   :multiple="false"
                   :on-preview="handlePreview"
@@ -234,7 +234,7 @@
             };
             return {
                 checked: true,
-                url:"http://aapi.kofuf.comm/api/licaishi/submit",
+                url:"http://api.kofuf.com/api/licaishi/submit",
                 fileList: [
                   // {name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}
                 ],
