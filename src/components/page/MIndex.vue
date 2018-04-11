@@ -213,7 +213,8 @@
           </div>
         </div>
         <!-- <router-link class="m-active-btn" :to="{ path: '/m-win-list',query: { channel: channel }}">金牌理财师复赛入选名单</router-link> -->
-        <router-link class="m-active-btn" :to="{ path: '/m-win-list',query: { channel: channel }}">现场直播即将开始</router-link>
+        <!-- <router-link class="m-active-btn" :to="{ path: '/m-win-list',query: { channel: channel }}">现场直播即将开始</router-link> -->
+        <div class="m-active-btn" @click="toLive()">现场直播即将开始</div>
     </div>
 </template>
 
@@ -242,6 +243,10 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
 						let videoDom = this.$refs.videoRef
 						videoDom.src = video
 						videoDom.poster = img
+					},
+					toLive(){
+						/* 跳转直播链接 */
+						// window.location.href = ''
 					}
         }
     }

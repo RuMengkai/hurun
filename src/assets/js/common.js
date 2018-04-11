@@ -27,7 +27,7 @@ export function isMobile(){
 }
 export function weixinShare(axios,shareData){
   // console.log(encodeURIComponent(window.location.href.split('#')[0]))
-	var url="https://api.51xy8.com/api/session/share_weixin_config?url="+encodeURIComponent(window.location.href.split('#')[0]);
+	var url="https://aapi.kofuf.comm/api/session/share_weixin_config?url="+encodeURIComponent(window.location.href.split('#')[0]);
 	axios.get(url)
 	.then(function (res) {
 		// var data=JSON.parse(data);
