@@ -10,36 +10,64 @@
 						<div class="ad-con">
 							<table>
 								<tr>
-									<td width="60">日期：</td>
+									<td width='60'>日期：</td>
 									<td>2018年4月12日（星期四）</td>
 								</tr>
 								<tr>
 									<td valign="top">
 										<p>时间：</p>	
 									</td>
-									<td>
-											<p>
-												14:00-14:30 发布会签到；
-											</p>
-											<p>
-												14:30-15:00 主办方致辞；
-											</p>
-											<p>
-												15:00-15:30 胡润发布《2018中国理财规划师白皮书》；
-											</p>
-											<p>
-												15:30-16:15 圆桌论坛； 
-											</p>
-											<p>
-												16:15-16:45 理财师颁奖；
-											</p>
-											<p>
-												16:45-17:00 媒体Q&A
-											</p>
-									</td>
+								</tr>
+							</table>
+							<table class="table-2">
+								<tr>
+									<td width="100">14:00-14:30</td>
+									<td>发布会签到；</td>
 								</tr>
 								<tr>
-									<td>地点：</td>
+									<td>14:30-14:35</td>
+									<td>开场及致辞：诸丛瑜 功夫财经执行总裁。</td>
+								</tr>
+								<tr>
+									<td>14:35-14:40</td>
+									<td>主办方致辞：胡润 胡润百富董事长兼首席调研员</td>
+								</tr>
+								<tr>
+									<td>14:40-14:45</td>
+									<td>联合主办方致辞：刁盛鑫 美信全球CEO</td>
+								</tr>
+								<tr>
+									<td>14:45-14:50</td>
+									<td>揭幕仪式</td>
+								</tr>
+								<tr>
+									<td>14:50-15:10</td>
+									<td>胡润发布《2018中国理财规划师白皮书》；</td>
+								</tr>
+								<tr>
+									<td>15:10-15:55</td>
+									<td>圆桌论坛：中国理财师的升级与挑战</td>
+								</tr>
+								<tr>
+									<td>15:55-16:05</td>
+									<td>媒体Q&A</td>
+								</tr>
+								<tr>
+									<td>16:05-16:35</td>
+									<td>TOP100理财师颁奖</td>
+								</tr>
+								<tr>
+									<td>16:35-16:50</td>
+									<td>嘉宾合影</td>
+								</tr>
+								<tr>
+									<td>16:50</td>
+									<td>活动结束</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<td width="60">地点：</td>
 									<td>上海浦东丽思卡尔顿</td>
 								</tr>
 								<tr valign="top">
@@ -47,6 +75,20 @@
 									<td>上海浦东陆家嘴世纪大道8号上海国金中心</td>
 								</tr>
 							</table>
+									
+						</div>
+						<div class="ad-con live-one">
+							<p class="title-center">- 同步直播 -</p>
+							<div class="flex">
+								<div @click="toYZBLive">
+									<img src="../../../static/img/yzb.png" alt="">
+									一直播
+								</div>
+								<div @click="toDYCJLive">
+									<img src="../../../static/img/dycj.png" alt="">
+									第一财经
+								</div>
+							</div>
 						</div>
 					</div>
           <div class="active-detail">
@@ -214,7 +256,7 @@
         </div>
         <!-- <router-link class="m-active-btn" :to="{ path: '/m-win-list',query: { channel: channel }}">金牌理财师复赛入选名单</router-link> -->
         <!-- <router-link class="m-active-btn" :to="{ path: '/m-win-list',query: { channel: channel }}">现场直播即将开始</router-link> -->
-        <div class="m-active-btn" @click="toLive()">现场直播即将开始</div>
+        <div class="m-active-btn" @click="toLive()">现场直播正在进行</div>
     </div>
 </template>
 
@@ -231,7 +273,7 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
             this.$router.push('/index/?channel='+this.$route.query.channel);
           }
           var data={
-            title:'理财师 222- 功夫财经',
+            title:'理财师 - 功夫财经',
             link:'http://licaishi.hurun.com',
             imgUrl:'http://m.51xy8.com/static/img_h5/h5_logo.png',
             desc:"胡润中国金牌理财师TOP100"
@@ -246,13 +288,23 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
 					},
 					toLive(){
 						/* 跳转直播链接 */
-						// window.location.href = ''
+						window.location.href = 'https://www.yizhibo.com/l/solH3ItPJYYnTm_g.html'
+					},
+					toDYCJLive(){
+						/* 跳转第一财经直播链接 */
+						// window.location.href = 'http://m.yizhibo.com/l/8lcbX4l3H8OxWXLb.html?memberid=IDRPYJTtbbWl7c2ZGE9QtQ..&from=groupmessage&isappinstalled=0'
+					},
+					toYZBLive(){
+						/* 跳转一直播链接 */
+						window.location.href = 'https://www.yizhibo.com/l/solH3ItPJYYnTm_g.html'
 					}
         }
     }
 </script>
 
 <style lang="less">
+	.table-2 { border-collapse: collapse; }
+	.table-2, .table-2 tr th, .table-2 tr td {padding: 2px; border:1px solid #fff; }
   @back_color:#1b1d1f;
   @font_color:#ebbc6c;
   .index-wrap-m{
@@ -490,8 +542,26 @@ import { isMobile,weixinShare } from '../../assets/js/common.js'
 			line-height: 30px;
 			font-size: 15px;
 			table{
-				margin: auto;
+				margin: 12px 0;
+				// margin: auto;
 			}
+		}
+	}
+	.live-one{
+		p{
+			font-size: 20px;
+			text-align: center;
+			color: #ebbc6d;
+		}
+		img{
+			vertical-align: middle;
+			width: 60px;
+			height: 60px;
+		}
+		.flex{
+			margin: 20px 0 0;
+			display: flex;
+			justify-content:space-around;
 		}
 	}
 </style>
